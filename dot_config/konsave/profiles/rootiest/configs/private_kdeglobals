@@ -21,13 +21,13 @@ IntensityAmount=0
 IntensityEffect=0
 
 [Colors:Button]
-BackgroundAlternate=115,96,154
+BackgroundAlternate=202,158,230
 BackgroundNormal=65, 69, 89
-DecorationFocus=137,108,182
-DecorationHover=137,108,182
-ForegroundActive=137,108,182
+DecorationFocus=202,158,230
+DecorationHover=65, 69, 89
+ForegroundActive=239, 159, 118
 ForegroundInactive=165, 173, 206
-ForegroundLink=137,108,182
+ForegroundLink=202,158,230
 ForegroundNegative=231, 130, 132
 ForegroundNeutral=229, 200, 144
 ForegroundNormal=198, 208, 245
@@ -37,11 +37,11 @@ ForegroundVisited=202, 158, 230
 [Colors:Complementary]
 BackgroundAlternate=35, 38, 52
 BackgroundNormal=41, 44, 60
-DecorationFocus=137,108,182
-DecorationHover=137,108,182
-ForegroundActive=137,108,182
+DecorationFocus=202,158,230
+DecorationHover=65, 69, 89
+ForegroundActive=239, 159, 118
 ForegroundInactive=165, 173, 206
-ForegroundLink=137,108,182
+ForegroundLink=202,158,230
 ForegroundNegative=231, 130, 132
 ForegroundNeutral=229, 200, 144
 ForegroundNormal=198, 208, 245
@@ -51,11 +51,11 @@ ForegroundVisited=202, 158, 230
 [Colors:Header]
 BackgroundAlternate=35, 38, 52
 BackgroundNormal=41, 44, 60
-DecorationFocus=137,108,182
-DecorationHover=137,108,182
-ForegroundActive=137,108,182
+DecorationFocus=202,158,230
+DecorationHover=65, 69, 89
+ForegroundActive=239, 159, 118
 ForegroundInactive=165, 173, 206
-ForegroundLink=137,108,182
+ForegroundLink=202,158,230
 ForegroundNegative=231, 130, 132
 ForegroundNeutral=229, 200, 144
 ForegroundNormal=198, 208, 245
@@ -63,27 +63,27 @@ ForegroundPositive=166, 209, 137
 ForegroundVisited=202, 158, 230
 
 [Colors:Selection]
-BackgroundAlternate=110,91,148
-BackgroundNormal=110,91,148
-DecorationFocus=137,108,182
-DecorationHover=137,108,182
-ForegroundActive=137,108,182
-ForegroundInactive=255,255,255
-ForegroundLink=137,108,182
+BackgroundAlternate=202,158,230
+BackgroundNormal=202,158,230
+DecorationFocus=202,158,230
+DecorationHover=65, 69, 89
+ForegroundActive=239, 159, 118
+ForegroundInactive=41, 44, 60
+ForegroundLink=202,158,230
 ForegroundNegative=231, 130, 132
 ForegroundNeutral=229, 200, 144
-ForegroundNormal=255,255,255
+ForegroundNormal=35, 38, 52
 ForegroundPositive=166, 209, 137
 ForegroundVisited=202, 158, 230
 
 [Colors:Tooltip]
 BackgroundAlternate=27,25,35
 BackgroundNormal=48, 52, 70
-DecorationFocus=137,108,182
-DecorationHover=137,108,182
-ForegroundActive=137,108,182
+DecorationFocus=202,158,230
+DecorationHover=65, 69, 89
+ForegroundActive=239, 159, 118
 ForegroundInactive=165, 173, 206
-ForegroundLink=137,108,182
+ForegroundLink=202,158,230
 ForegroundNegative=231, 130, 132
 ForegroundNeutral=229, 200, 144
 ForegroundNormal=198, 208, 245
@@ -93,11 +93,11 @@ ForegroundVisited=202, 158, 230
 [Colors:View]
 BackgroundAlternate=41, 44, 60
 BackgroundNormal=48, 52, 70
-DecorationFocus=137,108,182
-DecorationHover=137,108,182
-ForegroundActive=137,108,182
+DecorationFocus=202,158,230
+DecorationHover=65, 69, 89
+ForegroundActive=239, 159, 118
 ForegroundInactive=165, 173, 206
-ForegroundLink=137,108,182
+ForegroundLink=202,158,230
 ForegroundNegative=231, 130, 132
 ForegroundNeutral=229, 200, 144
 ForegroundNormal=198, 208, 245
@@ -107,11 +107,11 @@ ForegroundVisited=202, 158, 230
 [Colors:Window]
 BackgroundAlternate=35, 38, 52
 BackgroundNormal=41, 44, 60
-DecorationFocus=137,108,182
-DecorationHover=137,108,182
-ForegroundActive=137,108,182
+DecorationFocus=202,158,230
+DecorationHover=65, 69, 89
+ForegroundActive=239, 159, 118
 ForegroundInactive=165, 173, 206
-ForegroundLink=137,108,182
+ForegroundLink=202,158,230
 ForegroundNegative=231, 130, 132
 ForegroundNeutral=229, 200, 144
 ForegroundNormal=198, 208, 245
@@ -119,21 +119,23 @@ ForegroundPositive=166, 209, 137
 ForegroundVisited=202, 158, 230
 
 [DirSelect Dialog]
-DirSelectDialog Size=1300,780
-History Items[$e]=file:$HOME/Downloads/taildrop,file:$HOME/.local/share/Steam/,file:$HOME/Downloads/Sweet,file:$HOME/Downloads/Layan,file:$HOME/Breeze-Kvantum,file:///run/media/rootiest/14832b16-175b-4b21-befc-d21030432d60/home/rootiest/.local/share/Steam/,file:///run/media/rootiest/14832b16-175b-4b21-befc-d21030432d60,file:///run/media/rootiest/14832b16-175b-4b21-befc-d21030432d60/home/rootiest/.steam/
+DirSelectDialog Size=983,560
+History Items[$e]=file:$HOME/.local/share/Steam,file:$HOME/Downloads/taildrop,file:$HOME/.local/share/Steam/,file:$HOME/Downloads/Sweet,file:$HOME/Downloads/Layan,file:$HOME/Breeze-Kvantum,file:///run/media/rootiest/14832b16-175b-4b21-befc-d21030432d60/home/rootiest/.local/share/Steam/,file:///run/media/rootiest/14832b16-175b-4b21-befc-d21030432d60,file:///run/media/rootiest/14832b16-175b-4b21-befc-d21030432d60/home/rootiest/.steam/
 
 [General]
-AccentColor=137,108,182
+AccentColor=0,0,0,0
 ColorScheme=Catppuccin Frappe Mauve
 ColorSchemeHash=8e1d82774a5c2af57f9d45e477e0241e3defc109
+HideDesktopPreviewBanner=true
 LastUsedCustomAccentColor=184,117,220
+TerminalApplication=kitty
+TerminalService=kitty.desktop
 XftHintStyle=hintslight
 XftSubPixel=rgb
-accentColorFromWallpaper=true
 fixed=Monaspace Krypton,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 
 [Icons]
-Theme=breeze-dark
+Theme=breeze
 
 [KDE]
 ShowDeleteCommand=false
@@ -152,10 +154,10 @@ Show Inline Previews=true
 Show Preview=false
 Show Speedbar=true
 Show hidden files=true
-Sort by=Name
+Sort by=Date
 Sort directories first=true
 Sort hidden files last=false
-Sort reversed=false
+Sort reversed=true
 Speedbar Width=140
 View Style=DetailTree
 

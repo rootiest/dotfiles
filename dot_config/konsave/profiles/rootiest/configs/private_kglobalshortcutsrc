@@ -34,16 +34,37 @@ mute=Volume Mute,Volume Mute,Mute
 [ksmserver]
 Halt Without Confirmation=none,,Shut Down Without Confirmation
 Lock Session=Meta+L\tScreensaver,Meta+L\tScreensaver,Lock Session
-Log Out=Ctrl+Alt+Del,Ctrl+Alt+Del,Log Out
+Log Out=Ctrl+Alt+Del,Ctrl+Alt+Del,Show Logout Prompt
 Log Out Without Confirmation=none,,Log Out Without Confirmation
+LogOut=none,,Log Out
 Reboot=none,,Reboot
 Reboot Without Confirmation=none,,Reboot Without Confirmation
 Shut Down=none,,Shut Down
 _k_friendly_name=Session Management
 
 [kwin]
+Activate Tile 1=Ctrl+1,none,Activate Tile 1
+Activate Tile 10=Ctrl+0,none,Activate Tile 10
+Activate Tile 2=Ctrl+2,none,Activate Tile 2
+Activate Tile 3=Ctrl+3,none,Activate Tile 3
+Activate Tile 4=Ctrl+4,none,Activate Tile 4
+Activate Tile 5=Ctrl+5,none,Activate Tile 5
+Activate Tile 6=Ctrl+6,none,Activate Tile 6
+Activate Tile 7=Ctrl+7,none,Activate Tile 7
+Activate Tile 8=Ctrl+8,none,Activate Tile 8
+Activate Tile 9=Ctrl+9,none,Activate Tile 9
 Activate Window Demanding Attention=Meta+Ctrl+A,Meta+Ctrl+A,Activate Window Demanding Attention
 Alt-F4-Desktop=none,none,Close Window or show Logout Option
+Assign to Tile 1=Meta+F1,none,Assign to Tile 1
+Assign to Tile 10=Meta+F10,none,Assign to Tile 10
+Assign to Tile 2=Meta+F2,none,Assign to Tile 2
+Assign to Tile 3=Meta+F3,none,Assign to Tile 3
+Assign to Tile 4=Meta+F4,none,Assign to Tile 4
+Assign to Tile 5=none,none,Assign to Tile 5
+Assign to Tile 6=none,none,Assign to Tile 6
+Assign to Tile 7=Meta+F7,none,Assign to Tile 7
+Assign to Tile 8=Meta+F8,none,Assign to Tile 8
+Assign to Tile 9=Meta+F9,none,Assign to Tile 9
 Cube=Meta+C,Meta+C,Toggle Cube
 Cycle Overview=none,none,Cycle through Overview and Grid View
 Cycle Overview Opposite=none,none,Cycle through Grid View and Overview
@@ -125,7 +146,7 @@ Switch to Screen Above=none,,Switch to Screen Above
 Switch to Screen Below=none,,Switch to Screen Below
 Switch to Screen to the Left=none,,Switch to Screen to the Left
 Switch to Screen to the Right=none,,Switch to Screen to the Right
-Toggle Night Color=none,none,Toggle Night Light
+Toggle Night Color=none,none,Suspend/Resume Night Light
 Toggle Window Raise/Lower=none,,Toggle Window Raise/Lower
 ToggleMouseClick=Meta+*,Meta+*,Toggle Mouse Click Effect
 TrackMouse=none,none,Track mouse
@@ -244,6 +265,7 @@ powerProfile=Battery\tMeta+B,Battery\tMeta+B,Switch Power Profile
 
 [plasmashell]
 _k_friendly_name=plasmashell
+activate application launcher=Meta,Meta\tAlt+F1,Activate Application Launcher
 activate task manager entry 1=Meta+1,Meta+1,Activate Task Manager Entry 1
 activate task manager entry 10=none,Meta+0,Activate Task Manager Entry 10
 activate task manager entry 2=Meta+2,Meta+2,Activate Task Manager Entry 2
@@ -255,6 +277,7 @@ activate task manager entry 7=Meta+7,Meta+7,Activate Task Manager Entry 7
 activate task manager entry 8=Meta+8,Meta+8,Activate Task Manager Entry 8
 activate task manager entry 9=Meta+9,Meta+9,Activate Task Manager Entry 9
 activate widget 4=Alt+F1,none,Activate Application Launcher Widget
+activate widget 69=none,none,Activate Apdatifier Widget
 clear-history=none,,Clear Clipboard History
 clipboard_action=Meta+Ctrl+X,Meta+Ctrl+X,Automatic Action Popup Menu
 cycle-panels=Meta+Alt+P,Meta+Alt+P,Move keyboard focus between panels
@@ -271,3 +294,9 @@ stop current activity=Meta+S,Meta+S,Stop Current Activity
 switch to next activity=none,,Switch to Next Activity
 switch to previous activity=none,,Switch to Previous Activity
 toggle do not disturb=none,,Toggle do not disturb
+
+[services][kitty.desktop]
+_launch=Ctrl+Alt+T
+
+[services][org.kde.konsole.desktop]
+_launch=none

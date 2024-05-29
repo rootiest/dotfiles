@@ -1,9 +1,10 @@
 [1]
-Description=Show Vesktop on all activities
+Description=Force Vesktop Icon
 activity=00000000-0000-0000-0000-000000000000
 activityrule=3
 clientmachine=localhost
-desktopfile=gearlever_via_0c6032
+desktopfile=vesktop
+desktopfilerule=2
 title=KTailctl
 wmclass=vesktop
 wmclassmatch=1
@@ -26,6 +27,13 @@ desktopfile=gearlever_via_0c6032
 desktopfilerule=3
 title=KTailctl
 wmclass=via-nativia
+wmclassmatch=1
+
+[20db9ad0-fb1a-445a-9518-b607323ac04b]
+Description=Settings for vesktop
+desktopfile=vesktop
+desktopfilerule=5
+wmclass=vesktop
 wmclassmatch=1
 
 [2ffcd075-2bbe-4656-aa5e-eab7ba757818]
@@ -61,6 +69,10 @@ activityrule=3
 clientmachine=localhost
 wmclass=vesktop
 wmclassmatch=1
+
+[7da2ebce-229b-4fe9-8ee1-28e311b39361]
+Description=MyKitty Class Matching
+desktopfilerule=3
 
 [7ff6a5c5-eac2-447b-b8bf-d6e88d1baf2a]
 Description=Application settings for via-nativia

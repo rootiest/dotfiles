@@ -17,14 +17,22 @@ Show Whole Bracket Expression=false
 Text Font=Hack,10,-1,7,400,0,0,0,0,0,0,0,0,0,0,1
 Word Wrap Marker=false
 
+[KTextEditor::Search]
+Replace History={,#a6d189
+Search History=treesitter,barbe,telescope,scroll,cinn,tree,line,catpp,Plug ,listen_on,allow_remote_control,#252322,#8caaee,colorDefault,menu
+
 [MainWindow]
 1920x1080 screen: Window-Maximized=true
 2 screens: Window-Maximized=true
 2560x1440 screen: Window-Maximized=true
 
+[UiSettings]
+ColorScheme=
+
 [filetree]
 editShade=74,55,117
 listMode=false
+middleClickToClose=false
 shadingEnabled=true
 showCloseButton=false
 showFullPathOnRoots=false

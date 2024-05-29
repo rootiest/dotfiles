@@ -1,3 +1,6 @@
+[Keyboard]
+NumLock=0
+
 [Libinput][1267][12440][ELAN1201:00 04F3:3098 Touchpad]
 NaturalScroll=true
 
@@ -5,4 +8,5 @@ NaturalScroll=true
 OutputName=HDMI-A-1
 
 [Mouse]
-cursorTheme=Bibata-Modern-Classic
+cursorSize=32
+cursorTheme=Catppuccin-Frappe-Light-Cursors

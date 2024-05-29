@@ -11,7 +11,7 @@ ItemGeometries-1920x1080=Applet-51:16,864,64,64,0;
 ItemGeometries-2048x1152=Applet-51:16,1040,96,64,0;
 ItemGeometries-2560x1440=Applet-51:16,1328,96,64,0;
 ItemGeometries-3840x2160=Applet-51:16,880,64,64,0;
-ItemGeometriesHorizontal=Applet-51:16,864,64,64,0;
+ItemGeometriesHorizontal=Applet-51:16,1328,96,64,0;
 activityId=c0ef72a1-fbb2-41ad-bfcb-7242eaa7590e
 formfactor=0
 immutability=1
@@ -41,7 +41,7 @@ DialogWidth=720
 
 [Containments][1][General]
 ToolBoxButtonState=top
-ToolBoxButtonX=597
+ToolBoxButtonX=593
 ToolBoxButtonY=48
 positions={"2560x1440":[]\\,"1920x1080":[]\\,"3840x2160":[""]\\,"0x0":[]}
 sortMode=-1
@@ -57,8 +57,12 @@ Image=/home/rootiest/Cloning/Pictures/Wallpaper/wp10824773-mac-os-catalina-4k-wa
 
 [Containments][1][Wallpaper][com.github.catsout.wallpaperEngineKde][General]
 CustomConf=eyJmYXZvciI6WyIyMzE2MTE5NDkzIiwiMTk3MDQzMDE5OSIsIjI0NDc5MjgzMTAiLCIyNDUxNDM0Nzc5IiwiOTE3MDQzNjk0Il19
-FilterStr=11111111011111111111111111111111111
+DisplayMode=1
+FilterStr=11111111111111111111111111111111111
 Fps=30
+PauseBatPercent=20
+PauseMode=2
+PauseOnBatPower=true
 SteamLibraryPath[$e]=file:$HOME/.local/share/Steam
 VideoBackend=1
 WallpaperSource[$e]=file:$HOME/.local/share/Steam/steamapps/workshop/content/431960/1970430199/Valley Sunset.mp4+video
@@ -73,6 +77,7 @@ warningResources_dismissed=true
 
 [Containments][1][Wallpaper][org.kde.image][General]
 Image=/home/rootiest/Pictures/Wallpaper/Catalina Island.jpg
+PreviewImage=/home/rootiest/Pictures/Wallpaper/Catalina Island.jpg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][1][Wallpaper][org.kde.potd][General]
@@ -133,7 +138,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][3][Applets][21][Configuration]
-PreloadWeight=85
+PreloadWeight=100
 popupHeight=450
 popupWidth=560
 
@@ -164,7 +169,7 @@ immutability=1
 plugin=org.kde.milou
 
 [Containments][3][Applets][34][Configuration]
-PreloadWeight=85
+PreloadWeight=100
 popupHeight=400
 popupWidth=560
 
@@ -178,7 +183,7 @@ plugin=org.kde.plasma.kickoff
 
 [Containments][3][Applets][4][Configuration]
 PreloadWeight=100
-popupHeight=511
+popupHeight=497
 popupWidth=673
 
 [Containments][3][Applets][4][Configuration][General]
@@ -315,6 +320,15 @@ wallpaperplugin=org.kde.image
 immutability=1
 plugin=org.kde.plasma.plasm6desktopindicator
 
+[Containments][64][Applets][65][Configuration][ConfigDialog]
+DialogHeight=689
+DialogWidth=720
+
+[Containments][64][Applets][65][Configuration][General]
+boldOnActive=true
+highlightOnActive=true
+singleRow=false
+
 [Containments][64][Applets][66]
 immutability=1
 plugin=org.kde.plasma.icontasks
@@ -325,12 +339,15 @@ DialogWidth=720
 
 [Containments][64][Applets][66][Configuration][General]
 iconSpacing=0
-launchers=applications:firefox.desktop,preferred://filemanager,applications:org.kde.konsole.desktop,applications:code.desktop
+launchers=applications:firefox.desktop,preferred://filemanager,applications:kitty.desktop,applications:code.desktop
 
 [Containments][64][General]
 AppletOrder=65;66
 
 [Containments][67]
+ItemGeometries-1920x1080=
+ItemGeometries-2560x1440=
+ItemGeometriesHorizontal=
 activityId=561bfe41-eb34-4346-b536-26f7a0ed4b63
 formfactor=0
 immutability=1
@@ -339,6 +356,20 @@ location=0
 plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
+[Containments][67][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][67][General]
+ToolBoxButtonState=topcenter
+ToolBoxButtonX=704
+ToolBoxButtonY=48
+
+[Containments][67][Wallpaper][org.kde.image][General]
+Image=/home/rootiest/Pictures/Wallpaper/arch-4K.png
+PreviewImage=/home/rootiest/Pictures/Wallpaper/arch-4K.png
+SlidePaths=/home/rootiest/.local/share/wallpapers/,/usr/share/wallpapers/
+
 [Containments][68]
 activityId=2b843015-dac9-4324-b32a-fdb106079cf7
 formfactor=0
@@ -346,7 +377,14 @@ immutability=1
 lastScreen=0
 location=0
 plugin=org.kde.plasma.folder
-wallpaperplugin=org.kde.image
+wallpaperplugin=org.kde.color
+
+[Containments][68][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][68][Wallpaper][org.kde.color][General]
+Color=0,0,0
 
 [Containments][9]
 activityId=
@@ -355,7 +393,7 @@ immutability=1
 lastScreen=0
 location=3
 plugin=org.kde.plasma.private.systemtray
-popupHeight=487
+popupHeight=498
 popupWidth=432
 wallpaperplugin=org.kde.image
 
@@ -411,7 +449,7 @@ immutability=1
 plugin=org.kde.plasma.keyboardlayout
 
 [Containments][9][Applets][18][Configuration]
-PreloadWeight=60
+PreloadWeight=65
 
 [Containments][9][Applets][19]
 immutability=1
@@ -439,7 +477,7 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][9][Applets][24][Configuration]
-PreloadWeight=25
+PreloadWeight=5
 
 [Containments][9][Applets][25]
 immutability=1
@@ -490,7 +528,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][9][Applets][49][Configuration]
-PreloadWeight=100
+PreloadWeight=92
 
 [Containments][9][Applets][53]
 immutability=1
@@ -534,21 +572,27 @@ aur=true
 checkOnStartup=true
 flatpak=true
 lastNews={"article":"Arch Linux 2024 Leader Election Results","date":"2024-04-15","link":"https://archlinux.org/news/arch-linux-2024-leader-election-results","dismissed":true}
-timestamp=1715651118501
+timestamp=1716978486881
 wrapper=/usr/bin/paru
 
 [Containments][9][Applets][69][Configuration][Upgrade]
-terminal=/usr/bin/konsole
+dynamicUrl=https://archlinux.org/mirrorlist/?protocol=https&use_mirror_status=on&country=US
+terminal=/usr/bin/kitty
+upgradeFlags=true
+
+[Containments][9][Applets][70]
+immutability=1
+plugin=org.kde.plasma.vault
 
 [Containments][9][ConfigDialog]
 DialogHeight=540
 DialogWidth=720
 
 [Containments][9][General]
-extraItems=org.kde.plasma.bluetooth,org.kde.kdeconnect,org.kde.plasma.battery,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.keyboardindicator,org.kde.kscreen,org.kde.plasma.keyboardlayout,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.printmanager,com.github.k-donn.plasmoid-wunderground,com.github.exequtic.apdatifier
-hiddenItems=KTailctl,Xwayland Video Bridge_pipewireToXProxy,firewall-applet,org.kde.plasma.clipboard,org.kde.plasma.bluetooth,org.kde.plasma.brightness,ROG Control Center,caffeine,openrgb,jamesdsp,117440524,betrayer,tray-id,Syncthing Tray (Qt 6)
-knownItems=org.kde.plasma.bluetooth,org.kde.kdeconnect,org.kde.plasma.battery,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.keyboardindicator,org.kde.kscreen,org.kde.plasma.keyboardlayout,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.printmanager,com.github.exequtic.apdatifier
-shownItems=com.github.k-donn.plasmoid-wunderground,chrome_status_icon_1
+extraItems=org.kde.plasma.bluetooth,org.kde.kdeconnect,org.kde.plasma.battery,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.keyboardindicator,org.kde.kscreen,org.kde.plasma.keyboardlayout,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.printmanager,com.github.k-donn.plasmoid-wunderground,com.github.exequtic.apdatifier,org.kde.plasma.vault
+hiddenItems=KTailctl,Xwayland Video Bridge_pipewireToXProxy,firewall-applet,org.kde.plasma.clipboard,org.kde.plasma.bluetooth,org.kde.plasma.brightness,ROG Control Center,caffeine,openrgb,jamesdsp,117440524,betrayer,tray-id,Syncthing Tray (Qt 6),octopi-notifier,kopia-ui
+knownItems=org.kde.plasma.bluetooth,org.kde.kdeconnect,org.kde.plasma.battery,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.keyboardindicator,org.kde.kscreen,org.kde.plasma.keyboardlayout,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.printmanager,com.github.exequtic.apdatifier,org.kde.plasma.vault
+shownItems=com.github.k-donn.plasmoid-wunderground,electron,chrome_status_icon_1
 
 [Containments2Appletsts][62][Configuration][Appearance]
 date_font_size=56
