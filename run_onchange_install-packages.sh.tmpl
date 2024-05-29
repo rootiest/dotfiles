@@ -1,0 +1,51 @@
+
+# Define OSID based on the OS and OS release ID
+{{- $osid := .chezmoi.os -}}
+{{- if hasKey .chezmoi.osRelease "id" -}}
+{{-   $osid = printf "%s-%s" .chezmoi.os .chezmoi.osRelease.id -}}
+{{- end -}}
+
+[data]
+osid = {{ $osid | quote }}
+
+# Define the necessary packages to install
+export LINUX_PACKAGES="git ripgrep fish kitty nvim bitwarden-cli grc"
+
+# Install the necessary packages
+{{ if eq .osid "darwin" }}
+#!/bin/bash
+brew install
+{{ else if (.osid | lower | contains "microsoft") }}
+#!/bin/sh
+# WSL-specific code
+sudo apt install $LINUX_PACKAGES
+{{ else if eq .osid "linux-debian" }}
+#!/bin/sh
+# Debian-specific code
+sudo apt install $LINUX_PACKAGES
+{{ else if eq .osid "linux-mint" }}
+{{ else if eq .osid "linux-fedora" }}
+#!/bin/sh
+# Fedora-specific code
+sudo dnf install $LINUX_PACKAGES
+{{ else if eq .osid "linux-ubuntu" }}
+#!/bin/sh
+# Ubuntu-specific code
+sudo apt install $LINUX_PACKAGES
+{{ else if eq .osid "linux-arch" }}
+#!/bin/sh
+# Arch-specific code
+sudo pacman -S $LINUX_PACKAGES
+{{ else if eq .osid "linux-endeavoros" }}
+#!/bin/sh
+# EndeavorOS-specific code
+sudo pacman -S $LINUX_PACKAGES
+{{ else if eq .osid "linux-opensuse" }}
+#!/bin/sh
+# OpenSUSE-specific code
+sudo zypper install $LINUX_PACKAGES
+{{ else if eq .osid "linux-void" }}
+#!/bin/sh
+# Void-specific code
+sudo xbps-install -S $LINUX_PACKAGES
+{{ end }}
