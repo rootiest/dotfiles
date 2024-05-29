@@ -1,0 +1,22 @@
+[ContentDisplay]
+DirectorySizeCount=false
+
+[ExtractDialog]
+1920x1080 screen: Height=548
+1920x1080 screen: Width=1256
+DirHistory[$e]=$HOME/Games/
+
+[General]
+Version=202
+ViewPropsTimestamp=2024,4,1,0,50,9.116
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=22
+
+[MainWindow]
+MenuBar=Disabled
+ToolBarsMovable=Disabled
+
+[PreviewSettings]
+Plugins=appimagethumbnail,audiothumbnail,blenderthumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,fontthumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,mobithumbnail,opendocumentthumbnail,gsthumbnail,rawthumbnail,svgthumbnail,textthumbnail,ffmpegthumbs
