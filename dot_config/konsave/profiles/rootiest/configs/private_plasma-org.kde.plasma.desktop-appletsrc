@@ -79,8 +79,8 @@ selectedShaderPath=file:///home/rootiest/.local/share/plasma/wallpapers/online.k
 warningResources_dismissed=true
 
 [Containments][1][Wallpaper][org.kde.image][General]
-Image=/home/rootiest/Pictures/Wallpaper/wallhaven-dgj5vj.png
-PreviewImage=/home/rootiest/Pictures/Wallpaper/wallhaven-dgj5vj.png
+Image=/home/rootiest/Pictures/Wallpaper/42a9e4_67d480beb8a640d3a92767a72a039f55~mv2_d_11400_4200_s_4_2.jpg
+PreviewImage=/home/rootiest/Pictures/Wallpaper/42a9e4_67d480beb8a640d3a92767a72a039f55~mv2_d_11400_4200_s_4_2.jpg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][1][Wallpaper][org.kde.plasma.citygrow][General]
@@ -379,7 +379,7 @@ immutability=1
 lastScreen=0
 location=0
 plugin=org.kde.plasma.folder
-wallpaperplugin=org.kde.color
+wallpaperplugin=org.kde.image
 
 [Containments][85][ConfigDialog]
 DialogHeight=540
@@ -387,6 +387,10 @@ DialogWidth=720
 
 [Containments][85][Wallpaper][org.kde.color][General]
 Color=0,0,0
+
+[Containments][85][Wallpaper][org.kde.image][General]
+Image=/home/rootiest/Pictures/Wallpaper/wallhaven-dgj5vj.png
+SlidePaths=/home/rootiest/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][9]
 activityId=
