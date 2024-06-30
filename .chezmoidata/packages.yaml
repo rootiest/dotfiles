@@ -1,0 +1,24 @@
+packages:
+  darwin:
+    brews:
+    - 'git'
+    casks:
+    - 'google-chrome'
+  debian:
+    apt:
+    - 'git'
+    - 'ripgrep'
+    - 'fish'
+    - 'kitty'
+    - 'nvim'
+    - 'bitwarden-cli'
+    - 'grc'
+  arch:
+    pacman:
+    - 'git'
+    - 'ripgrep'
+    - 'fish'
+    - 'kitty'
+    - 'nvim'
+    - 'bitwarden-cli'
+    - 'grc'

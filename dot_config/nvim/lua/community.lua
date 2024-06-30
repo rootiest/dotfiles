@@ -9,6 +9,9 @@ return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.pack.lua" },
   -- import/override with your plugins folder
+  { import = "astrocommunity.recipes.neovide" },
+  { import = "astrocommunity.recipes.vscode" },
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.completion.copilot-cmp" },
+  { import = "astrocommunity.utility.noice-nvim" },
 }
