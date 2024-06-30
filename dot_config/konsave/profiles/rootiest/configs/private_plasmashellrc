@@ -1,30 +1,6 @@
 [Applets][45][Configuration]
 PreloadWeight=42
 
-[Applets][54]
-immutability=1
-plugin=org.kde.plasma.weather
-
-[Applets][54][Configuration]
-PreloadWeight=70
-configMigrated=true
-
-[Applets][54][Configuration][Appearance]
-showPressureInTooltip=true
-
-[Applets][54][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
-
-[Applets][54][Configuration][Units]
-pressureUnit=5028
-speedUnit=9002
-temperatureUnit=6002
-visibilityUnit=2024
-
-[Applets][54][Configuration][WeatherStation]
-source=wettercom|weather|Wolfeboro, New Hampshire, US|US0NH0248;Wolfeboro
-
 [FileDialogSize]
 2 screens: Height=720
 2 screens: Width=1280
@@ -82,7 +58,7 @@ thickness=128
 [PlasmaViews][Panel 64]
 floating=1
 panelLengthMode=1
-panelVisibility=2
+panelVisibility=1
 
 [PlasmaViews][Panel 64][Defaults]
 thickness=84

@@ -5,7 +5,7 @@ RightButton;NoModifier=org.kde.contextmenu
 RightButton;NoModifier=org.kde.contextmenu
 
 [Containments][1]
-ItemGeometries-0x0=Applet-51:16,1328,96,64,0;
+ItemGeometries-0x0=Applet-51:16,864,96,64,0;
 ItemGeometries-1536x864=
 ItemGeometries-1920x1080=Applet-51:16,864,64,64,0;
 ItemGeometries-2048x1152=Applet-51:16,1040,96,64,0;
@@ -47,13 +47,13 @@ positions={"2560x1440":[]\\,"1920x1080":[]\\,"3840x2160":[""]\\,"0x0":[]}
 sortMode=-1
 
 [Containments][1][Wallpaper][a2n.blur][General]
-BlurRadius=16
-Image=/home/rootiest/Cloning/Pictures/Wallpaper/wp10824773-mac-os-catalina-4k-wallpapers.jpg
+BlurRadius=64
+Image=/home/rootiest/Pictures/Wallpaper/wallhaven-dgj5vj.png
 PreviewImage=/usr/share/wallpapers/Next/
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][1][Wallpaper][com.github.bojidar-bg.parallax][General]
-Image=/home/rootiest/Cloning/Pictures/Wallpaper/wp10824773-mac-os-catalina-4k-wallpapers.jpg
+Image=/home/rootiest/Pictures/Wallpaper/wallhaven-dgj5vj.png
 
 [Containments][1][Wallpaper][com.github.catsout.wallpaperEngineKde][General]
 CustomConf=eyJmYXZvciI6WyIyMzE2MTE5NDkzIiwiMTk3MDQzMDE5OSIsIjI0NDc5MjgzMTAiLCIyNDUxNDM0Nzc5IiwiOTE3MDQzNjk0Il19
@@ -69,16 +69,23 @@ WallpaperSource[$e]=file:$HOME/.local/share/Steam/steamapps/workshop/content/431
 WallpaperWorkShopId=1970430199
 
 [Containments][1][Wallpaper][online.knowmad.shaderwallpaper][General]
+iChannel0=file:///home/rootiest/.local/share/plasma/wallpapers/online.knowmad.shaderwallpaper/contents/ui/Resources/Shadertoy_London.jpg
+iChannel1=file:///home/rootiest/.local/share/plasma/wallpapers/online.knowmad.shaderwallpaper/contents/ui/Resources/Shadertoy_Organic_2.jpg
+iChannel2=file:///home/rootiest/.local/share/plasma/wallpapers/online.knowmad.shaderwallpaper/contents/ui/Resources/Shadertoy_RGBA_Noise_Small.png
 infoPlasma6Preview_dismissed=true
 infoiChannelSettings_dismissed=true
-selectedShaderIndex=12
-selectedShaderPath=file:///home/rootiest/.local/share/plasma/wallpapers/online.knowmad.shaderwallpaper/contents/ui/Shaders6/AI_NotIncluded.frag.qsb
+selectedShaderIndex=-1
+selectedShaderPath=file:///home/rootiest/.local/share/plasma/wallpapers/online.knowmad.shaderwallpaper/contents/ui/Shaders6/Night_Sky.frag.qsb
 warningResources_dismissed=true
 
 [Containments][1][Wallpaper][org.kde.image][General]
-Image=/home/rootiest/Pictures/Wallpaper/Catalina Island.jpg
-PreviewImage=/home/rootiest/Pictures/Wallpaper/Catalina Island.jpg
+Image=/home/rootiest/Pictures/Wallpaper/wallhaven-dgj5vj.png
+PreviewImage=/home/rootiest/Pictures/Wallpaper/wallhaven-dgj5vj.png
 SlidePaths=/usr/share/wallpapers/
+
+[Containments][1][Wallpaper][org.kde.plasma.citygrow][General]
+scale=2
+start_branches=7
 
 [Containments][1][Wallpaper][org.kde.potd][General]
 FillMode=2
@@ -97,7 +104,7 @@ immutability=1
 lastScreen=1
 location=0
 plugin=org.kde.plasma.folder
-wallpaperplugin=org.kde.color
+wallpaperplugin=org.kde.image
 
 [Containments][2][ConfigDialog]
 DialogHeight=540
@@ -106,6 +113,10 @@ DialogWidth=720
 [Containments][2][General]
 ToolBoxButtonState=topcenter
 ToolBoxButtonX=302
+
+[Containments][2][Wallpaper][a2n.blur][General]
+Image=/home/rootiest/Pictures/Wallpaper/wp10824787-mac-os-catalina-4k-wallpapers.jpg
+SlidePaths=/home/rootiest/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][2][Wallpaper][org.kde.color][General]
 Color=0,0,0
@@ -152,10 +163,6 @@ use24hFormat=2
 DialogHeight=540
 DialogWidth=720
 
-[Containments][3][Applets][22]
-immutability=1
-plugin=org.kde.plasma.showdesktop
-
 [Containments][3][Applets][32]
 immutability=1
 plugin=org.kde.plasma.panelspacer
@@ -183,7 +190,7 @@ plugin=org.kde.plasma.kickoff
 
 [Containments][3][Applets][4][Configuration]
 PreloadWeight=100
-popupHeight=497
+popupHeight=498
 popupWidth=673
 
 [Containments][3][Applets][4][Configuration][General]
@@ -203,6 +210,17 @@ plugin=org.kde.plasma.pager
 immutability=1
 plugin=org.kde.plasma.marginsseparator
 
+[Containments][3][Applets][79]
+immutability=1
+plugin=org.kde.plasma.activitypager
+
+[Containments][3][Applets][79][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][3][Applets][79][Configuration][General]
+currentDesktopSelected=ShowDesktop
+
 [Containments][3][Applets][8]
 immutability=1
 plugin=org.kde.plasma.systemtray
@@ -211,101 +229,24 @@ plugin=org.kde.plasma.systemtray
 PreloadWeight=100
 SystrayContainmentId=9
 
+[Containments][3][Applets][81]
+immutability=1
+plugin=org.kde.plasma.panelspacer
+
+[Containments][3][Applets][81][Configuration][General]
+expanding=false
+length=20
+
+[Containments][3][Applets][82]
+immutability=1
+plugin=org.kde.plasma.panelspacer
+
+[Containments][3][Applets][82][Configuration][General]
+expanding=false
+length=10
+
 [Containments][3][General]
-AppletOrder=4;22;5;7;33;21;32;8;34
-
-[Containments][48]
-ItemGeometries-0x0=
-ItemGeometries-1920x1080=
-ItemGeometries-2560x1440=
-ItemGeometries-3840x2160=Applet-52:2064,0,560,80,0;
-ItemGeometriesHorizontal=
-activityId=b0826b6e-ad8d-4f6e-9250-b93c62e20632
-formfactor=0
-immutability=1
-lastScreen=0
-location=0
-plugin=org.kde.plasma.folder
-wallpaperplugin=org.kde.color
-
-[Containments][48][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
-
-[Containments][48][General]
-ToolBoxButtonState=topcenter
-ToolBoxButtonX=704
-ToolBoxButtonY=48
-
-[Containments][48][Wallpaper][org.kde.color][General]
-Color=0,0,0
-
-[Containments][48][Wallpaper][org.kde.image][General]
-Image=/home/rootiest/Cloning/Pictures/Wallpaper/wp10117199-macos-dark-wallpapers.jpg
-PreviewImage=/home/rootiest/Cloning/Pictures/Wallpaper/wp10117199-macos-dark-wallpapers.jpg
-SlidePaths=/usr/share/wallpapers/
-
-[Containments][54]
-ItemGeometries-0x0=Applet-63:0,64,1280,512,0;
-ItemGeometries-1280x720=Applet-63:0,64,1280,512,0;
-ItemGeometries-1920x1200=
-ItemGeometriesHorizontal=Applet-63:0,64,1280,512,0;
-activityId=b0826b6e-ad8d-4f6e-9250-b93c62e20632
-formfactor=0
-immutability=1
-lastScreen=1
-location=0
-plugin=org.kde.plasma.folder
-wallpaperplugin=org.kde.color
-
-[Containments][54][Applets][52][Configuration]
-popupHeight=400
-popupWidth=560
-
-[Containments][54][Applets][52][Configuration][Appearance]
-fuzzyness=2
-
-[Containments][54][Applets][52][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
-
-[Containments][54][Applets][63]
-immutability=1
-plugin=com.github.prayag2.modernclock
-
-[Containments][54][Applets][63][Configuration][Appearance]
-date_font_size=56
-day_font_size=127
-time_font_size=56
-
-[Containments][54][Applets][63][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
-
-[Containments][54][ConfigDialog]
-DialogHeight=559
-DialogWidth=630
-
-[Containments][54][General]
-ToolBoxButtonState=topcenter
-ToolBoxButtonX=302
-
-[Containments][54][Wallpaper][org.kde.color][General]
-Color=0,0,0
-
-[Containments][54][Wallpaper][org.kde.image][General]
-Image=/home/rootiest/Pictures/Wallpaper/wp10824787-mac-os-catalina-4k-wallpapers.jpg
-PreviewImage=/home/rootiest/Pictures/Wallpaper/wp10824787-mac-os-catalina-4k-wallpapers.jpg
-SlidePaths=/usr/share/wallpapers/
-
-[Containments][55]
-activityId=b0826b6e-ad8d-4f6e-9250-b93c62e20632
-formfactor=0
-immutability=1
-lastScreen=2
-location=0
-plugin=org.kde.plasma.folder
-wallpaperplugin=org.kde.image
+AppletOrder=4;82;7;79;81;5;33;21;32;8;34
 
 [Containments][64]
 activityId=
@@ -339,16 +280,17 @@ DialogWidth=720
 
 [Containments][64][Applets][66][Configuration][General]
 iconSpacing=0
-launchers=applications:firefox.desktop,preferred://filemanager,applications:kitty.desktop,applications:code.desktop
+launchers=applications:firefox.desktop,[a9acb59d-903c-4fb9-8ca4-1be2126a7a9e]\napplications:kitty-2.desktop,preferred://filemanager,[c0ef72a1-fbb2-41ad-bfcb-7242eaa7590e\\,84a483ec-9308-44a2-8036-d089c3338402]\napplications:kitty.desktop,applications:code.desktop,applications:NeoKitty.desktop
 
 [Containments][64][General]
 AppletOrder=65;66
 
-[Containments][67]
-ItemGeometries-1920x1080=
-ItemGeometries-2560x1440=
-ItemGeometriesHorizontal=
-activityId=561bfe41-eb34-4346-b536-26f7a0ed4b63
+[Containments][72]
+ItemGeometries-0x0=Applet-77:1616,544,112,112,0;
+ItemGeometries-1920x1080=Applet-77:1616,544,112,112,0;
+ItemGeometries-2560x1440=Applet-77:1616,544,112,112,0;
+ItemGeometriesHorizontal=Applet-77:1616,544,112,112,0;
+activityId=84a483ec-9308-44a2-8036-d089c3338402
 formfactor=0
 immutability=1
 lastScreen=0
@@ -356,22 +298,82 @@ location=0
 plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
-[Containments][67][ConfigDialog]
+[Containments][72][Applets][77]
+immutability=1
+plugin=org.kde.plasma.quicklaunch
+
+[Containments][72][Applets][77][Configuration][General]
+launcherUrls=file:///home/rootiest/.local/share/applications/obsidian.desktop
+
+[Containments][73]
+ItemGeometries-0x0=Applet-74:1520,288,272,272,0;Applet-75:1136,928,272,160,0;
+ItemGeometries-1920x1080=Applet-74:1120,128,272,272,0;Applet-75:784,720,352,144,0;
+ItemGeometries-2560x1440=Applet-74:1472,272,240,240,0;Applet-75:1072.18,928,416,160,0;
+ItemGeometriesHorizontal=Applet-74:1120,128,272,272,0;Applet-75:784,720,352,144,0;
+activityId=a9acb59d-903c-4fb9-8ca4-1be2126a7a9e
+formfactor=0
+immutability=1
+lastScreen=0
+location=0
+plugin=org.kde.plasma.folder
+wallpaperplugin=org.kde.image
+
+[Containments][73][Applets][74]
+immutability=1
+plugin=org.kde.plasma.analogclock
+
+[Containments][73][Applets][74][Configuration]
+PreloadWeight=60
+popupHeight=400
+popupWidth=560
+
+[Containments][73][Applets][74][Configuration][ConfigDialog]
 DialogHeight=540
 DialogWidth=720
 
-[Containments][67][General]
-ToolBoxButtonState=topcenter
-ToolBoxButtonX=704
-ToolBoxButtonY=48
+[Containments][73][Applets][74][Configuration][General]
+showSecondHand=true
 
-[Containments][67][Wallpaper][org.kde.image][General]
+[Containments][73][Applets][75]
+immutability=1
+plugin=org.kde.plasma.quicklaunch
+
+[Containments][73][Applets][75][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][73][Applets][75][Configuration][General]
+launcherUrls=file:///home/rootiest/.local/share/applications/kitty-2.desktop,file:///home/rootiest/.local/share/applications/NeoKitty.desktop,file:///usr/share/applications/code.desktop
+
+[Containments][73][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][73][Wallpaper][org.kde.image][General]
 Image=/home/rootiest/Pictures/Wallpaper/arch-4K.png
 PreviewImage=/home/rootiest/Pictures/Wallpaper/arch-4K.png
 SlidePaths=/home/rootiest/.local/share/wallpapers/,/usr/share/wallpapers/
 
-[Containments][68]
-activityId=2b843015-dac9-4324-b32a-fdb106079cf7
+[Containments][84]
+activityId=a9acb59d-903c-4fb9-8ca4-1be2126a7a9e
+formfactor=0
+immutability=1
+lastScreen=1
+location=0
+plugin=org.kde.plasma.folder
+wallpaperplugin=org.kde.image
+
+[Containments][84][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][84][Wallpaper][org.kde.image][General]
+Image=/home/rootiest/Pictures/Wallpaper/flatppuccin_4k_macchiato.png
+PreviewImage=/home/rootiest/Pictures/Wallpaper/flatppuccin_4k_macchiato.png
+SlidePaths=/home/rootiest/.local/share/wallpapers/,/usr/share/wallpapers/
+
+[Containments][85]
+activityId=e0e3505e-d10f-47f4-9444-2d48130d866c
 formfactor=0
 immutability=1
 lastScreen=0
@@ -379,11 +381,11 @@ location=0
 plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.color
 
-[Containments][68][ConfigDialog]
+[Containments][85][ConfigDialog]
 DialogHeight=540
 DialogWidth=720
 
-[Containments][68][Wallpaper][org.kde.color][General]
+[Containments][85][Wallpaper][org.kde.color][General]
 Color=0,0,0
 
 [Containments][9]
@@ -393,8 +395,8 @@ immutability=1
 lastScreen=0
 location=3
 plugin=org.kde.plasma.private.systemtray
-popupHeight=498
-popupWidth=432
+popupHeight=477
+popupWidth=477
 wallpaperplugin=org.kde.image
 
 [Containments][9][Applets][10]
@@ -477,7 +479,7 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][9][Applets][24][Configuration]
-PreloadWeight=5
+PreloadWeight=0
 
 [Containments][9][Applets][25]
 immutability=1
@@ -528,7 +530,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][9][Applets][49][Configuration]
-PreloadWeight=92
+PreloadWeight=99
 
 [Containments][9][Applets][53]
 immutability=1
@@ -546,9 +548,9 @@ DialogHeight=540
 DialogWidth=720
 
 [Containments][9][Applets][53][Configuration][Station]
-latitude=43.31
-longitude=-70.988
-stationID=KNHROCHE66
+latitude=18.138441
+longitude=-65.431165
+stationID=IVIEQU20
 
 [Containments][9][Applets][53][Configuration][Units]
 unitsChoice=1
@@ -572,7 +574,7 @@ aur=true
 checkOnStartup=true
 flatpak=true
 lastNews={"article":"Arch Linux 2024 Leader Election Results","date":"2024-04-15","link":"https://archlinux.org/news/arch-linux-2024-leader-election-results","dismissed":true}
-timestamp=1716978486881
+timestamp=1719711504151
 wrapper=/usr/bin/paru
 
 [Containments][9][Applets][69][Configuration][Upgrade]
@@ -584,13 +586,16 @@ upgradeFlags=true
 immutability=1
 plugin=org.kde.plasma.vault
 
+[Containments][9][Applets][70][Configuration]
+PreloadWeight=55
+
 [Containments][9][ConfigDialog]
 DialogHeight=540
 DialogWidth=720
 
 [Containments][9][General]
 extraItems=org.kde.plasma.bluetooth,org.kde.kdeconnect,org.kde.plasma.battery,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.keyboardindicator,org.kde.kscreen,org.kde.plasma.keyboardlayout,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.printmanager,com.github.k-donn.plasmoid-wunderground,com.github.exequtic.apdatifier,org.kde.plasma.vault
-hiddenItems=KTailctl,Xwayland Video Bridge_pipewireToXProxy,firewall-applet,org.kde.plasma.clipboard,org.kde.plasma.bluetooth,org.kde.plasma.brightness,ROG Control Center,caffeine,openrgb,jamesdsp,117440524,betrayer,tray-id,Syncthing Tray (Qt 6),octopi-notifier,kopia-ui
+hiddenItems=KTailctl,Xwayland Video Bridge_pipewireToXProxy,firewall-applet,org.kde.plasma.clipboard,org.kde.plasma.bluetooth,org.kde.plasma.brightness,ROG Control Center,caffeine,openrgb,jamesdsp,117440524,betrayer,tray-id,Syncthing Tray (Qt 6),octopi-notifier,kopia-ui,Syncthing Tray
 knownItems=org.kde.plasma.bluetooth,org.kde.kdeconnect,org.kde.plasma.battery,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.keyboardindicator,org.kde.kscreen,org.kde.plasma.keyboardlayout,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.printmanager,com.github.exequtic.apdatifier,org.kde.plasma.vault
 shownItems=com.github.k-donn.plasmoid-wunderground,electron,chrome_status_icon_1
 
@@ -603,6 +608,10 @@ use_24_hour_format=true
 
 [Containments3Appletsts][6][Configuration][General]
 launchers=preferred://browser,applications:org.kde.konsole.desktop,preferred://filemanager
+
+[Containments3Appletsts][79][Configuration][General]
+currentDesktopSelected=ShowDesktop
+showWindowIcons=true
 
 [ScreenMapping]
 itemsOnDisabledScreens=

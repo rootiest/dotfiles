@@ -8,5 +8,4 @@ NaturalScroll=true
 OutputName=HDMI-A-1
 
 [Mouse]
-cursorSize=32
-cursorTheme=Catppuccin-Frappe-Light-Cursors
+cursorTheme=catppuccin-frappe-dark-cursors

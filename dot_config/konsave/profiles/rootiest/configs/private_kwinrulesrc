@@ -36,6 +36,10 @@ desktopfilerule=5
 wmclass=vesktop
 wmclassmatch=1
 
+[2fdd6fa4-7ce3-42fd-b38d-bb15a2dadc9c]
+desktopfile=btop
+desktopfilerule=3
+
 [2ffcd075-2bbe-4656-aa5e-eab7ba757818]
 Description=Vesktop on all Activities
 activity=00000000-0000-0000-0000-000000000000
@@ -70,6 +74,9 @@ clientmachine=localhost
 wmclass=vesktop
 wmclassmatch=1
 
+[630d004c-45e5-455b-8d21-a65b92df7459]
+desktopfilerule=3
+
 [7da2ebce-229b-4fe9-8ee1-28e311b39361]
 Description=MyKitty Class Matching
 desktopfilerule=3
@@ -91,8 +98,8 @@ types=1
 wmclass=*
 
 [General]
-count=4
-rules=1,2,3,4
+count=5
+rules=d74d3d4c-a671-4dea-9e75-9d93253dbf5e,1,2,3,4
 
 [a26c98bb-ef99-42fb-882a-3ac4a640feb6]
 Description=Fallout 4 icon
@@ -101,9 +108,32 @@ desktopfilerule=3
 wmclass=steam_app_377160
 wmclassmatch=1
 
+[a31cefb1-6d99-4443-b75e-7edc992531a7]
+aboverule=3
+
+[b7657c59-e4cb-41f1-a01f-9ef06343e100]
+desktopfile=kitty.desktop
+desktopfilerule=2
+wmclass=mykitty
+
 [ba52989e-7473-4737-b65e-64099646abe6]
 Description=Show discord on all activities
 activity=00000000-0000-0000-0000-000000000000
 activityrule=3
 wmclass=discord
+wmclassmatch=1
+
+[c7bd63c7-c3fa-496d-ae95-807f66f1a21d]
+Description=ShowMeTheKeys
+above=true
+aboverule=2
+wmclass=showmethekey-gtk
+wmclassmatch=1
+
+[d74d3d4c-a671-4dea-9e75-9d93253dbf5e]
+Description=ShowMeTheKey
+above=true
+aboverule=2
+wmclass=showmethekey-gtk
+wmclasscomplete=true
 wmclassmatch=1

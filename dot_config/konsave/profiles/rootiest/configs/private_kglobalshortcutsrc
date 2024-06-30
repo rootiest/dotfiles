@@ -1,9 +1,9 @@
 [ActivityManager]
 _k_friendly_name=Activity Manager
-switch-to-activity-2b843015-dac9-4324-b32a-fdb106079cf7=none,none,Switch to activity "Media"
-switch-to-activity-561bfe41-eb34-4346-b536-26f7a0ed4b63=none,none,Switch to activity "Secure"
-switch-to-activity-b0826b6e-ad8d-4f6e-9250-b93c62e20632=none,none,Switch to activity "Night"
-switch-to-activity-c0ef72a1-fbb2-41ad-bfcb-7242eaa7590e=none,none,Switch to activity "Home"
+switch-to-activity-84a483ec-9308-44a2-8036-d089c3338402=Meta+Ctrl+K,none,Switch to activity "Notes"
+switch-to-activity-a9acb59d-903c-4fb9-8ca4-1be2126a7a9e=Meta+Ctrl+J,none,Switch to activity "NeoVim"
+switch-to-activity-c0ef72a1-fbb2-41ad-bfcb-7242eaa7590e=Meta+Ctrl+H,none,Switch to activity "Home"
+switch-to-activity-e0e3505e-d10f-47f4-9444-2d48130d866c=none,none,Switch to activity "Night"
 
 [KDE Keyboard Layout Switcher]
 Switch to Last-Used Keyboard Layout=Meta+Alt+L,Meta+Alt+L,Switch to Last-Used Keyboard Layout
@@ -19,6 +19,10 @@ Disable Touchpad=Touchpad Off,Touchpad Off,
 Enable Touchpad=Touchpad On,Touchpad On,
 Toggle Touchpad=Touchpad Toggle\tMeta+Ctrl+Zenkaku Hankaku,Touchpad Toggle\tMeta+Ctrl+Zenkaku Hankaku,
 _k_friendly_name=Touchpad
+
+[kded6]
+Show System Activity=Ctrl+Esc,Ctrl+Esc,Show System Activity
+_k_friendly_name=kded6
 
 [kmix]
 _k_friendly_name=Audio Volume
@@ -295,8 +299,20 @@ switch to next activity=none,,Switch to Next Activity
 switch to previous activity=none,,Switch to Previous Activity
 toggle do not disturb=none,,Toggle do not disturb
 
+[services][NeoKitty.desktop]
+_launch=Ctrl+Alt+N
+
+[services][code.desktop]
+_launch=Ctrl+Alt+M
+
+[services][kitty-2.desktop]
+_launch=Ctrl+Alt+Y
+
 [services][kitty.desktop]
 _launch=Ctrl+Alt+T
+
+[services][neovide.desktop]
+_launch=Ctrl+Alt+V
 
 [services][org.kde.konsole.desktop]
 _launch=none

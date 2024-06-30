@@ -19,7 +19,7 @@ Word Wrap Marker=false
 
 [KTextEditor::Search]
 Replace History={,#a6d189
-Search History=treesitter,barbe,telescope,scroll,cinn,tree,line,catpp,Plug ,listen_on,allow_remote_control,#252322,#8caaee,colorDefault,menu
+Search History=shutdown,spoolman,~,sess,treesitter,barbe,telescope,scroll,cinn,tree,line,catpp,Plug ,listen_on,allow_remote_control,#252322,#8caaee,colorDefault,menu
 
 [MainWindow]
 1920x1080 screen: Window-Maximized=true

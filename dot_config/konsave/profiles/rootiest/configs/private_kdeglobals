@@ -119,8 +119,8 @@ ForegroundPositive=166, 209, 137
 ForegroundVisited=202, 158, 230
 
 [DirSelect Dialog]
-DirSelectDialog Size=983,560
-History Items[$e]=file:$HOME/.local/share/Steam,file:$HOME/Downloads/taildrop,file:$HOME/.local/share/Steam/,file:$HOME/Downloads/Sweet,file:$HOME/Downloads/Layan,file:$HOME/Breeze-Kvantum,file:///run/media/rootiest/14832b16-175b-4b21-befc-d21030432d60/home/rootiest/.local/share/Steam/,file:///run/media/rootiest/14832b16-175b-4b21-befc-d21030432d60,file:///run/media/rootiest/14832b16-175b-4b21-befc-d21030432d60/home/rootiest/.steam/
+DirSelectDialog Size=972,573
+History Items[$e]=file:$HOME/Desktop/asimov,file:$HOME/Desktop,file:$HOME/Desktop/asimov,file:$HOME/.local/share/Steam/Steam,file:$HOME/.steam,file:$HOME/.steam,file:$HOME,file:$HOME/.local/share/Steam,file:$HOME/Downloads/taildrop,file:$HOME/.local/share/Steam/,file:$HOME/Downloads/Sweet,file:$HOME/Downloads/Layan,file:$HOME/Breeze-Kvantum,file:///run/media/rootiest/14832b16-175b-4b21-befc-d21030432d60/home/rootiest/.local/share/Steam/,file:///run/media/rootiest/14832b16-175b-4b21-befc-d21030432d60,file:///run/media/rootiest/14832b16-175b-4b21-befc-d21030432d60/home/rootiest/.steam/
 
 [General]
 AccentColor=0,0,0,0
@@ -130,20 +130,23 @@ HideDesktopPreviewBanner=true
 LastUsedCustomAccentColor=184,117,220
 TerminalApplication=kitty
 TerminalService=kitty.desktop
-XftHintStyle=hintslight
+XftAntialias=true
+XftHintStyle=hintnone
 XftSubPixel=rgb
-fixed=Monaspace Krypton,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
-
-[Icons]
-Theme=breeze
+fixed=MonaspaceKrypton Nerd Font,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+font=NotoSans NF,10,-1,5,900,0,0,0,0,0,0,0,0,0,0,1,Regular
+menuFont=NotoSans NF,10,-1,5,900,0,0,0,0,0,0,0,0,0,0,1,Regular
+smallestReadableFont=NotoSans NF,8,-1,5,900,0,0,0,0,0,0,0,0,0,0,1,Regular
+toolBarFont=NotoSans NF,10,-1,5,900,0,0,0,0,0,0,0,0,0,0,1,Regular
 
 [KDE]
+LookAndFeelPackage=org.kde.breezedark.desktop
 ShowDeleteCommand=false
-widgetStyle=kvantum-dark
+widgetStyle=kvantum
 
 [KFileDialog Settings]
 Allow Expansion=false
-Automatically select filename extension=true
+Automatically select filename extension=false
 Breadcrumb Navigation=false
 Decoration position=2
 LocationCombo Completionmode=5
@@ -174,6 +177,7 @@ Theme=harmony2
 [WM]
 activeBackground=48,52,70
 activeBlend=198,208,245
+activeFont=NotoSans NF,10,-1,5,900,0,0,0,0,0,0,0,0,0,0,1,Regular
 activeForeground=198,208,245
 inactiveBackground=35,38,52
 inactiveBlend=165,173,206
