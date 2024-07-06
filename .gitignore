@@ -1,1 +1,4 @@
-key.txt.age
+key.txt*
+secrets*
+debug/
+dot_git/
