@@ -24,8 +24,10 @@ The rootiest neovim configuration you will ever see!
 
    - Required
 
-     - [git](https://git-scm.com/) - Version control system
-     - [luarocks](https://luarocks.org/) - Lua package manager
+     - [git](https://git-scm.com/) -
+       Version control system
+     - [luarocks](https://luarocks.org/) -
+       Lua package manager
 
    - Optional (but recommended for the full experience)
      - [ripgrep](https://github.com/BurntSushi/ripgrep) -
