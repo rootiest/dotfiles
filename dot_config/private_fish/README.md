@@ -35,7 +35,7 @@ The rootiest fish configuration you will ever see!
 3. Install pre-requisites
 
    - Required
-      - [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts/) - 
+      - [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts/) -
       You must use a terminal/font that provides these glyphs
    - Optional
      - [lsd](https://github.com/lsd-rs/lsd) -
@@ -81,15 +81,6 @@ The rootiest fish configuration you will ever see!
 
 Nerd Font glyphs are ***required***.
 Please use a terminal and font that provide them.
-
-If you chose not to install `lsd` please
-execute the following to remove the associated aliases:
-
-   ```bash
-      sh ~/.config/fish/rm-lsd-alias.sh
-   ```
-
-Failing to do so will cause the `ls` command to malfunction.
 
 ## Features
 
