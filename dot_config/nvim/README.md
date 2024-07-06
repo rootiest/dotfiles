@@ -28,14 +28,22 @@ The rootiest neovim configuration you will ever see!
      - [luarocks](https://luarocks.org/) - Lua package manager
 
    - Optional (but recommended for the full experience)
-     - [ripgrep](https://github.com/BurntSushi/ripgrep) - A faster grep
-     - [fzf](https://github.com/junegunn/fzf) - A command-line fuzzy finder
-     - [fd](https://github.com/sharkdp/fd) - A simple, fast and user-friendly alternative to 'find'
-     - [lazygit](https://github.com/jesseduffield/lazygit) - A simple terminal UI for git commands
-     - [tree-sitter](https://github.com/tree-sitter/tree-sitter/) - A parser generator tool and an incremental parsing library
-     - [kitty](https://sw.kovidgoyal.net/kitty/) - A fast, featureful, GPU based terminal emulator
-     - [neovide](https://neovide.dev/) - A simple, fast, featureful, and modern neovim GUI
-     - [fish](https://fishshell.com/) - A smart and user-friendly command line shell
+     - [ripgrep](https://github.com/BurntSushi/ripgrep) -
+       A faster grep
+     - [fzf](https://github.com/junegunn/fzf) -
+       A command-line fuzzy finder
+     - [fd](https://github.com/sharkdp/fd) -
+       A simple, fast and user-friendly alternative to 'find'
+     - [lazygit](https://github.com/jesseduffield/lazygit) -
+       A simple terminal UI for git commands
+     - [tree-sitter](https://github.com/tree-sitter/tree-sitter/) -
+       A parser generator tool and an incremental parsing library
+     - [kitty](https://sw.kovidgoyal.net/kitty/) -
+       A fast, featureful, GPU based terminal emulator
+     - [neovide](https://neovide.dev/) -
+       A simple, fast, featureful, and modern neovim GUI
+     - [fish](https://fishshell.com/) -
+       A smart and user-friendly command line shell
 
 3. Backup your current nvim configuration (if you have one)
 
