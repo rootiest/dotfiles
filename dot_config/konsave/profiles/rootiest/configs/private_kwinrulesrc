@@ -74,6 +74,16 @@ clientmachine=localhost
 wmclass=vesktop
 wmclassmatch=1
 
+[52ac801c-eaeb-41ec-802b-ec38e4a6f4d6]
+Description=Window settings for mykitty
+desktopfile=mykitty
+desktopfilerule=2
+title=~
+types=1
+wmclass=kitty mykitty
+wmclasscomplete=true
+wmclassmatch=1
+
 [630d004c-45e5-455b-8d21-a65b92df7459]
 desktopfilerule=3
 
@@ -98,8 +108,8 @@ types=1
 wmclass=*
 
 [General]
-count=5
-rules=d74d3d4c-a671-4dea-9e75-9d93253dbf5e,1,2,3,4
+count=6
+rules=52ac801c-eaeb-41ec-802b-ec38e4a6f4d6,d74d3d4c-a671-4dea-9e75-9d93253dbf5e,1,2,3,4
 
 [a26c98bb-ef99-42fb-882a-3ac4a640feb6]
 Description=Fallout 4 icon

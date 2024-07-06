@@ -119,8 +119,8 @@ ForegroundPositive=166, 209, 137
 ForegroundVisited=202, 158, 230
 
 [DirSelect Dialog]
-DirSelectDialog Size=972,573
-History Items[$e]=file:$HOME/Desktop/asimov,file:$HOME/Desktop,file:$HOME/Desktop/asimov,file:$HOME/.local/share/Steam/Steam,file:$HOME/.steam,file:$HOME/.steam,file:$HOME,file:$HOME/.local/share/Steam,file:$HOME/Downloads/taildrop,file:$HOME/.local/share/Steam/,file:$HOME/Downloads/Sweet,file:$HOME/Downloads/Layan,file:$HOME/Breeze-Kvantum,file:///run/media/rootiest/14832b16-175b-4b21-befc-d21030432d60/home/rootiest/.local/share/Steam/,file:///run/media/rootiest/14832b16-175b-4b21-befc-d21030432d60,file:///run/media/rootiest/14832b16-175b-4b21-befc-d21030432d60/home/rootiest/.steam/
+DirSelectDialog Size=1300,780
+History Items[$e]=file:$HOME/.local/share/chezmoi,file:$HOME/.local/share/chezmoi/dot_config,file:$HOME/.config/kitty,file:$HOME/.config/fish,file:$HOME/.config/nvim,file:$HOME/.config/kitty,file:$HOME/.config/nvim.old,file:$HOME/.config/nvim,file:$HOME/.config/nvim,file:$HOME/.config/nvim-rootiest,file:$HOME/.config/kitty,file:$HOME/Desktop/asimov,file:$HOME/Desktop,file:$HOME/Desktop/asimov,file:$HOME/.local/share/Steam/Steam,file:$HOME/.steam,file:$HOME/.steam,file:$HOME,file:$HOME/.local/share/Steam,file:$HOME/Downloads/taildrop,file:$HOME/.local/share/Steam/,file:$HOME/Downloads/Sweet,file:$HOME/Downloads/Layan,file:$HOME/Breeze-Kvantum,file:///run/media/rootiest/14832b16-175b-4b21-befc-d21030432d60/home/rootiest/.local/share/Steam/,file:///run/media/rootiest/14832b16-175b-4b21-befc-d21030432d60,file:///run/media/rootiest/14832b16-175b-4b21-befc-d21030432d60/home/rootiest/.steam/
 
 [General]
 AccentColor=0,0,0,0

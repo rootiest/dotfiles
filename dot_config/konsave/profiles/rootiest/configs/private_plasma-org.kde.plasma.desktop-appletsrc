@@ -7,7 +7,7 @@ RightButton;NoModifier=org.kde.contextmenu
 [Containments][1]
 ItemGeometries-0x0=Applet-51:16,864,96,64,0;
 ItemGeometries-1536x864=
-ItemGeometries-1920x1080=Applet-51:16,864,64,64,0;
+ItemGeometries-1920x1080=Applet-51:32,864,64,64,0;
 ItemGeometries-2048x1152=Applet-51:16,1040,96,64,0;
 ItemGeometries-2560x1440=Applet-51:16,1328,96,64,0;
 ItemGeometries-3840x2160=Applet-51:16,880,64,64,0;
@@ -79,8 +79,8 @@ selectedShaderPath=file:///home/rootiest/.local/share/plasma/wallpapers/online.k
 warningResources_dismissed=true
 
 [Containments][1][Wallpaper][org.kde.image][General]
-Image=/home/rootiest/Pictures/Wallpaper/42a9e4_67d480beb8a640d3a92767a72a039f55~mv2_d_11400_4200_s_4_2.jpg
-PreviewImage=/home/rootiest/Pictures/Wallpaper/42a9e4_67d480beb8a640d3a92767a72a039f55~mv2_d_11400_4200_s_4_2.jpg
+Image=/home/rootiest/Pictures/Wallpaper/wallhaven-dgj5vj.png
+PreviewImage=/home/rootiest/Pictures/Wallpaper/wallhaven-dgj5vj.png
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][1][Wallpaper][org.kde.plasma.citygrow][General]
@@ -151,7 +151,7 @@ plugin=org.kde.plasma.digitalclock
 [Containments][3][Applets][21][Configuration]
 PreloadWeight=100
 popupHeight=450
-popupWidth=560
+popupWidth=396
 
 [Containments][3][Applets][21][Configuration][Appearance]
 dateFormat=isoDate
@@ -190,7 +190,7 @@ plugin=org.kde.plasma.kickoff
 
 [Containments][3][Applets][4][Configuration]
 PreloadWeight=100
-popupHeight=498
+popupHeight=594
 popupWidth=673
 
 [Containments][3][Applets][4][Configuration][General]
@@ -280,7 +280,7 @@ DialogWidth=720
 
 [Containments][64][Applets][66][Configuration][General]
 iconSpacing=0
-launchers=applications:firefox.desktop,[a9acb59d-903c-4fb9-8ca4-1be2126a7a9e]\napplications:kitty-2.desktop,preferred://filemanager,[c0ef72a1-fbb2-41ad-bfcb-7242eaa7590e\\,84a483ec-9308-44a2-8036-d089c3338402]\napplications:kitty.desktop,applications:code.desktop,applications:NeoKitty.desktop
+launchers=applications:firefox.desktop,[a9acb59d-903c-4fb9-8ca4-1be2126a7a9e]\napplications:kitty-2.desktop,preferred://filemanager,[84a483ec-9308-44a2-8036-d089c3338402\\,c0ef72a1-fbb2-41ad-bfcb-7242eaa7590e]\napplications:kitty.desktop,applications:code.desktop,applications:NeoKitty.desktop
 
 [Containments][64][General]
 AppletOrder=65;66
@@ -306,10 +306,10 @@ plugin=org.kde.plasma.quicklaunch
 launcherUrls=file:///home/rootiest/.local/share/applications/obsidian.desktop
 
 [Containments][73]
-ItemGeometries-0x0=Applet-74:1520,288,272,272,0;Applet-75:1136,928,272,160,0;
+ItemGeometries-0x0=Applet-74:1520,288,272,272,0;Applet-75:1136,880,272,144,0;
 ItemGeometries-1920x1080=Applet-74:1120,128,272,272,0;Applet-75:784,720,352,144,0;
-ItemGeometries-2560x1440=Applet-74:1472,272,240,240,0;Applet-75:1072.18,928,416,160,0;
-ItemGeometriesHorizontal=Applet-74:1120,128,272,272,0;Applet-75:784,720,352,144,0;
+ItemGeometries-2560x1440=Applet-74:1472,272,240,240,0;Applet-75:1072,944,416,160,0;
+ItemGeometriesHorizontal=Applet-74:1520,288,272,272,0;Applet-75:1136,880,272,144,0;
 activityId=a9acb59d-903c-4fb9-8ca4-1be2126a7a9e
 formfactor=0
 immutability=1
@@ -324,8 +324,8 @@ plugin=org.kde.plasma.analogclock
 
 [Containments][73][Applets][74][Configuration]
 PreloadWeight=60
-popupHeight=400
-popupWidth=560
+popupHeight=396
+popupWidth=396
 
 [Containments][73][Applets][74][Configuration][ConfigDialog]
 DialogHeight=540
@@ -343,11 +343,15 @@ DialogHeight=540
 DialogWidth=720
 
 [Containments][73][Applets][75][Configuration][General]
-launcherUrls=file:///home/rootiest/.local/share/applications/kitty-2.desktop,file:///home/rootiest/.local/share/applications/NeoKitty.desktop,file:///usr/share/applications/code.desktop
+launcherUrls=file:///home/rootiest/.local/share/applications/NeoKitty.desktop,file:///home/rootiest/.local/share/applications/kitty-2.desktop,file:///home/rootiest/.local/share/applications/code.desktop
 
 [Containments][73][ConfigDialog]
 DialogHeight=540
 DialogWidth=720
+
+[Containments][73][General]
+positions={"2560x1440":[]\\,"0x0":[""]}
+sortMode=-1
 
 [Containments][73][Wallpaper][org.kde.image][General]
 Image=/home/rootiest/Pictures/Wallpaper/arch-4K.png
@@ -373,13 +377,16 @@ PreviewImage=/home/rootiest/Pictures/Wallpaper/flatppuccin_4k_macchiato.png
 SlidePaths=/home/rootiest/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][85]
+ItemGeometries-0x0=
+ItemGeometries-1920x1080=
+ItemGeometriesHorizontal=
 activityId=e0e3505e-d10f-47f4-9444-2d48130d866c
 formfactor=0
 immutability=1
 lastScreen=0
 location=0
 plugin=org.kde.plasma.folder
-wallpaperplugin=org.kde.image
+wallpaperplugin=org.kde.color
 
 [Containments][85][ConfigDialog]
 DialogHeight=540
@@ -399,8 +406,8 @@ immutability=1
 lastScreen=0
 location=3
 plugin=org.kde.plasma.private.systemtray
-popupHeight=477
-popupWidth=477
+popupHeight=432
+popupWidth=432
 wallpaperplugin=org.kde.image
 
 [Containments][9][Applets][10]
@@ -419,7 +426,7 @@ immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][9][Applets][12][Configuration]
-PreloadWeight=80
+PreloadWeight=85
 
 [Containments][9][Applets][13]
 immutability=1
@@ -534,7 +541,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][9][Applets][49][Configuration]
-PreloadWeight=99
+PreloadWeight=100
 
 [Containments][9][Applets][53]
 immutability=1
@@ -578,13 +585,13 @@ aur=true
 checkOnStartup=true
 flatpak=true
 lastNews={"article":"Arch Linux 2024 Leader Election Results","date":"2024-04-15","link":"https://archlinux.org/news/arch-linux-2024-leader-election-results","dismissed":true}
-timestamp=1719711504151
+timestamp=1720275290905
 wrapper=/usr/bin/paru
 
 [Containments][9][Applets][69][Configuration][Upgrade]
 dynamicUrl=https://archlinux.org/mirrorlist/?protocol=https&use_mirror_status=on&country=US
 terminal=/usr/bin/kitty
-upgradeFlags=true
+upgradeFlagsText=--noconfirm
 
 [Containments][9][Applets][70]
 immutability=1

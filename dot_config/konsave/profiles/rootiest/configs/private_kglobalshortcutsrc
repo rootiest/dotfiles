@@ -3,7 +3,7 @@ _k_friendly_name=Activity Manager
 switch-to-activity-84a483ec-9308-44a2-8036-d089c3338402=Meta+Ctrl+K,none,Switch to activity "Notes"
 switch-to-activity-a9acb59d-903c-4fb9-8ca4-1be2126a7a9e=Meta+Ctrl+J,none,Switch to activity "NeoVim"
 switch-to-activity-c0ef72a1-fbb2-41ad-bfcb-7242eaa7590e=Meta+Ctrl+H,none,Switch to activity "Home"
-switch-to-activity-e0e3505e-d10f-47f4-9444-2d48130d866c=none,none,Switch to activity "Night"
+switch-to-activity-e0e3505e-d10f-47f4-9444-2d48130d866c=Ctrl+Alt+L,none,Switch to activity "Night"
 
 [KDE Keyboard Layout Switcher]
 Switch to Last-Used Keyboard Layout=Meta+Alt+L,Meta+Alt+L,Switch to Last-Used Keyboard Layout

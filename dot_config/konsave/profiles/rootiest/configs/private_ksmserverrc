@@ -2,7 +2,12 @@
 count=0
 
 [Session: saved at previous logout]
-count=0
+clientId1=10d3d7e5db000172019276300000017520004
+count=1
+program1=firefox
+restartCommand1=/usr/lib/firefox/firefox,--sm-client-id,10d3d7e5db000172019276300000017520004
+restartStyleHint1=0
+userId1=rootiest
 
 [SubSession: 2b843015-dac9-4324-b32a-fdb106079cf7]
 count=0
