@@ -80,13 +80,15 @@ The rootiest dotfiles you will ever see!
 - Customized Fish Shell Configuration
 - Built for comfort and productivity
 
-## Companion Tools
+## Companion Repositories
 
-[Rootiest Fish Conf](https://github.com/rootiest/rootiest-fish) - Fish shell configuration that pairs well with this kitty configuration and the neovim configuration.
+These are included in rootiest dotfiles, but can be used independently.
 
-[Rootiest Neovim](https://github.com/rootiest/rootiest-nvim) - A neovim config built to work alongside this and the fish config.
+[Rootiest Fish Conf](https://github.com/rootiest/rootiest-fish) -
+Fish shell configuration that pairs well with this kitty configuration and the neovim configuration.
 
-[Nerd Fonts](https://github.com/ryanoasis/nerd-fonts/) - A collection of fonts that include many icons and glyphs that are used in this configuration. The default font is Monaspace Krypton and kitty uses the Symbols Only Nerd Font.
+[Rootiest Neovim](https://github.com/rootiest/rootiest-nvim) -
+A neovim config built to work alongside this and the fish config.
 
 ## Credits
 
