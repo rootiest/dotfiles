@@ -1,4 +1,4 @@
-function cffetch --wraps='clear;fastfetch --config ~/.fastfetch.jsonc' --description 'alias cffetch=clear;fastfetch --config ~/.fastfetch.jsonc'
+function cffetch --wraps='clear;fastfetch' --description 'alias cffetch=clear;fastfetch'
     clear
     if which fastfetch >/dev/null 2>&1
         if ls ~/.fastfetch.jsonc >/dev/null 2>&1

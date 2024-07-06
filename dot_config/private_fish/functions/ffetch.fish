@@ -1,4 +1,4 @@
-function ffetch --wraps='fastfetch' --wraps='fastfetch --config ~/.fastfetch.jsonc' --description 'alias ffetch=fastfetch --config ~/.fastfetch.jsonc'
+function ffetch --wraps='fastfetch' --description 'alias ffetch=fastfetch'
     if which fastfetch >/dev/null 2>&1
         if ls ~/.fastfetch.jsonc >/dev/null 2>&1
             fastfetch --config ~/.fastfetch.jsonc $argv
