@@ -59,8 +59,5 @@ fish_vi_key_bindings
 set TMUX
 set -Ux fish_tmux_config $HOME/.config/tmux/tmux.conf
 
-### NVim Alternative Path ###
-set -x PATH $PATH:/opt/nvim/
-
 ### VaultWarden Server ###
 set -gx BW_SERVER "https://vault.rootiest.dev"
