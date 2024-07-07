@@ -53,10 +53,18 @@ The Rootiest dotfiles you will ever see!
 
 ## Installation
 
-> **Note:** This configures a complete Linux environment.  
-> It is recommended to use a fresh install or backup your existing configuration.
+> **NOTE:** This configures a **complete** Linux environment.
 
-1. Install the Rootiest dotfiles
+It is strongly recommended to use a fresh install
+or backup your existing configuration.
+
+Accompanying tools and packages will be installed automatically.
+
+No pre-requisites are required, just a working internet connection.
+
+### Installation Steps
+
+1. **Install** the Rootiest dotfiles 📜
 
    This command will both install chezmoi and apply the Rootiest dotfiles.
 
@@ -64,21 +72,9 @@ The Rootiest dotfiles you will ever see!
    sh -c "$(curl -fsLS git.io/chezmoi)" -- init --apply rootiest
    ```
 
-   Accompanying tools and packages will be installed automatically.
+2. Have a coffee ☕️ while the configuration installs.
 
-   No pre-requisites are needed.
-
-2. Answer the prompts:
-
-   - **Username**: Your git username
-   - **Email**: Your git email
-   - **Using GUI**: y/n Does the system use GUIs?
-
-   Additional prompts may be required depending on your configuration.
-
-3. Have a coffee ☕️ while the installation completes.
-
-4. **Enjoy!** 🎉
+3. **Enjoy!** 🎉
 
 ## Features
 
@@ -95,6 +91,27 @@ The Rootiest dotfiles you will ever see!
 - Git commit signing with GPG
 - Encryption with AGE and GPG
 
+## Trying it out
+
+If you want to try out the configuration without installing it, you can use the
+following command:
+
+```bash
+sh -c "$(curl -fsLS git.io/chezmoi)" -- init --apply rootiest --dry-run
+```
+
+This will show you what would be installed without actually installing it.
+
+## Updating
+
+To update the Rootiest dotfiles, you can use the following command:
+
+```bash
+chezmoi update
+```
+
+This will update the configuration to the latest version.
+
 ## Companion Repositories
 
 These are included in Rootiest dotfiles, but can be used independently.
@@ -103,7 +120,7 @@ These are included in Rootiest dotfiles, but can be used independently.
 Fish shell configuration that pairs well with this configuration.
 
 [Rootiest Neovim Configuration](https://github.com/rootiest/rootiest-nvim) -
-A neovim config built to work alongside this configuration.
+A Neovim config built to work alongside this configuration.
 
 ## Credits
 
