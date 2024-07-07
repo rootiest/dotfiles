@@ -49,16 +49,16 @@
 
 ```
 
-The rootiest dotfiles you will ever see!
+The Rootiest dotfiles you will ever see!
 
 ## Installation
 
 > **Note:** This configures a complete Linux environment.  
 > It is recommended to use a fresh install or backup your existing configuration.
 
-1. Install the rootiest dotfiles
+1. Install the Rootiest dotfiles
 
-   This command will both install chezmoi and apply the rootiest dotfiles.
+   This command will both install chezmoi and apply the Rootiest dotfiles.
 
    ```bash
    sh -c "$(curl -fsLS git.io/chezmoi)" -- init --apply rootiest
@@ -68,19 +68,28 @@ The rootiest dotfiles you will ever see!
 
    No pre-requisites are needed.
 
-2. Have a coffee ☕️ while the installation completes.
+2. Answer the prompts:
 
-3. **Enjoy!** 🎉
+   - **Username**: Your git username
+   - **Email**: Your git email
+   - **Using GUI**: y/n Does the system use GUIs?
+
+   Additional prompts may be required depending on your configuration.
+
+3. Have a coffee ☕️ while the installation completes.
+
+4. **Enjoy!** 🎉
 
 ## Features
 
-- Integrated KDE Plasma Desktop
-- Customized Kitty Terminal
-- Customized NeoVim Configuration
-- Customized Fish Shell Configuration
+- Integrated [KDE Plasma Desktop](https://kde.org) profile
+- Customized [Kitty Terminal](https://sw.kovidgoyal.net/kitty/) Configuration
+- Customized [Neovim](https://neovim.io/) Configuration
+- Customized [Fish Shell](https://fishshell.com/) Configuration
 - Built for comfort and productivity
 - Works with any Linux distribution
 - Automatic package installation on Arch, SUSE, and Debian based distros
+- Integrates with [BitWarden Password Manager](https://bitwarden.com/)
 - SSH credential management
 - Git credential management
 - Git commit signing with GPG
@@ -88,13 +97,13 @@ The rootiest dotfiles you will ever see!
 
 ## Companion Repositories
 
-These are included in rootiest dotfiles, but can be used independently.
+These are included in Rootiest dotfiles, but can be used independently.
 
-[Rootiest Fish Conf](https://github.com/rootiest/rootiest-fish) -
-Fish shell configuration that pairs well with this kitty configuration and the neovim configuration.
+[Rootiest Fish Configuration](https://github.com/rootiest/rootiest-fish) -
+Fish shell configuration that pairs well with this configuration.
 
-[Rootiest Neovim](https://github.com/rootiest/rootiest-nvim) -
-A neovim config built to work alongside this and the fish config.
+[Rootiest Neovim Configuration](https://github.com/rootiest/rootiest-nvim) -
+A neovim config built to work alongside this configuration.
 
 ## Credits
 
