@@ -9,3 +9,4 @@ bdc40625de565a0c7c2ea05fe99897f0181ae67f f7204c015ec5be84ba79e001d6e6b0525e7e1c8
 f7204c015ec5be84ba79e001d6e6b0525e7e1c80 971ec9fb7e84e3e04a130173011c4ebf74a2d4d8 Rootiest <chris@rootiest.com> 1720277767 -0400	commit: Update documentation
 971ec9fb7e84e3e04a130173011c4ebf74a2d4d8 a28251287ba12669143303a4cfed5300d363d6bb Rootiest <chris@rootiest.com> 1720286682 -0400	commit: feat: :sparkles: Add Ayu theme
 a28251287ba12669143303a4cfed5300d363d6bb 8c73137d9b1848197a74e4f2a3128cf04ff859b0 Rootiest <chris@rootiest.com> 1720315449 -0400	commit: docs: :memo: Improve lazy loading explanation
+8c73137d9b1848197a74e4f2a3128cf04ff859b0 5c3dcaddd7caa2bf75e5d649211f940c6733c491 rootiest <chris@rootiest.com> 1720382408 -0400	commit: Check for root user

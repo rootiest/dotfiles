@@ -1,3 +1,3 @@
-docs: :memo: Improve lazy loading explanation
+Check for root user
 
-Mention in documentation how excessive use of lazy loading may sometimes result in plugins appearing to be missing
+Check for root user and disable some plugins that don't play nice
