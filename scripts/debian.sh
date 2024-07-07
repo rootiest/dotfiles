@@ -11,7 +11,7 @@ install_deps() {
       yt-dlp yay plasma ffmpegthumbnailer
       noto-fonts-emoji otf-monaspace-nerd
       ttf-firacode-nerd ttf-noto-nerd
-      tailscale"
+      tailscale bw"
   sudo $ins $pkgs
 }
 

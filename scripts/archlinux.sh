@@ -11,7 +11,7 @@ install_deps() {
         yt-dlp yay plasma ffmpegthumbnailer
         noto-fonts-emoji otf-monaspace-nerd
         ttf-firacode-nerd ttf-noto-nerd
-        github-cli tailscale"
+        github-cli tailscale bw"
 }
 
 install_browser() {
