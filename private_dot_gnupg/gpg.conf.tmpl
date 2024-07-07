@@ -1,0 +1,14 @@
+
+keyserver  hkp://pool.sks-keyservers.net
+use-agent
+
+#-----------------------------
+# default key
+#-----------------------------
+
+{{- if .key_sign }}
+default-key {{ .key_sign }}
+{{- end }}
+{{- if .key_encrypt }}
+default-recipient {{ .key_encrypt }}
+{{- end }}

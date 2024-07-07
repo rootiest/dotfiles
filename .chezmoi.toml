@@ -1,0 +1,30 @@
+{{- $personal := false -}}
+{{- $secrets := false -}}
+
+{{- $username := promptStringOnce . "username" "Enter your username" -}}
+{{- $email := promptStringOnce . "email" "Enter your email" -}}
+{{- $hasGUI := promptBoolOnce . "hasGUI" "Does this machine have a GUI" -}}
+
+{{- if eq $username "rootiest" -}}
+{{- $personal = true -}}
+{{- $secrets = true -}}
+{{- $gpg_recipient = "22AC9FB6A53826DF0C1A76D8928B182425A3D6FF" -}}
+{{- $gpg_sign = "22AC9FB6A53826DF0C1A76D8928B182425A3D6FF" -}}
+{{- $gpg_encrypt = "22AC9FB6A53826DF0C1A76D8928B182425A3D6FF" -}}
+
+{{- end -}}
+
+{{- if $secrets -}}
+encryption = "age"
+[age]
+    identity = "~/.config/chezmoi/key.txt"
+    recipient = "age1t2zvkztt5xkf6mua0mnywravlkk2h5xjrtnzyxxxn263dcx8u99qpt5ja5"
+{{ end -}}
+[data]
+  name = "{{ $username }}"
+  personal = {{ $personal }}
+  secrets = {{ $secrets }}
+  hasgui = {{ $hasgui }}
+  email = "{{ $email }}"
+  editor = "nvim"
+

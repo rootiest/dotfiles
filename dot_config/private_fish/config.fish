@@ -48,8 +48,8 @@ set -g theme_newline_cursor no
 set -U grc_plugin_ignore_execs ls
 
 ### Default Editors ###
-set -gx EDITOR 'nvim'
-set -gx VISUAL 'nvim'
+set -gx EDITOR nvim
+set -gx VISUAL nvim
 
 ### VI Key Bindings ###
 fish_vi_key_bindings
@@ -58,3 +58,6 @@ fish_vi_key_bindings
 # /usr/bin/tmux
 set TMUX
 set -Ux fish_tmux_config $HOME/.config/tmux/tmux.conf
+
+### NVim Alternative Path ###
+set -x PATH $PATH:/opt/nvim/

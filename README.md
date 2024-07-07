@@ -74,11 +74,17 @@ The rootiest dotfiles you will ever see!
 
 ## Features
 
-- Integrated KDE Plasma 6 Desktop (Note: KDE Plasma is not automatically installed.)
+- Integrated KDE Plasma Desktop
 - Customized Kitty Terminal
-- Customized Neovim Configuration
+- Customized NeoVim Configuration
 - Customized Fish Shell Configuration
 - Built for comfort and productivity
+- Works with any Linux distribution
+- Automatic package installation on Arch, SUSE, and Debian based distros
+- SSH credential management
+- Git credential management
+- Git commit signing with GPG
+- Encryption with AGE and GPG
 
 ## Companion Repositories
 
