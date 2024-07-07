@@ -79,10 +79,17 @@ No pre-requisites are required, just a working internet connection.
 ## Features
 
 - Integrated [KDE Plasma Desktop](https://kde.org) profile
-- Customized [Kitty Terminal](https://sw.kovidgoyal.net/kitty/) Configuration
+- Customized [Kitty Terminal](https://sw.kovidgoyal.net/kitty/)
+  Configuration
 - Customized [Neovim](https://neovim.io/) Configuration
 - Customized [Fish Shell](https://fishshell.com/) Configuration
 - Built for comfort and productivity
+- [Catppuccin](https://github.com/catppuccin/catppuccin) theme used
+  across all applications:
+  - Frappe for night mode
+  - Latte for day mode
+- Other included themes: Tokyo Night, Ayu, and more
+- KDE, VSCode, firefox, chromium, neovim, kitty, fish, and more
 - Works with any Linux distribution
 - Automatic package installation on Arch, SUSE, and Debian based distros
 - Integrates with [BitWarden Password Manager](https://bitwarden.com/)
@@ -91,10 +98,37 @@ No pre-requisites are required, just a working internet connection.
 - Git commit signing with GPG
 - Encryption with AGE and GPG
 
+## Screenshots
+
+<details>
+   <summary>KDE</summary>
+
+Night Mode: (default)
+![KDE Dark](https://raw.githubusercontent.com/rootiest/dotfiles/main/.screenshots/kde-night.png)
+
+Day Mode:
+![KDE Light](https://raw.githubusercontent.com/rootiest/dotfiles/main/.screenshots/kde-day.png)
+
+</details>
+
+<details>
+   <summary>NeoVim</summary>
+
+![NeoVim UI](https://raw.githubusercontent.com/rootiest/dotfiles/main/.screenshots/neovim.png)
+
+</details>
+
+<details>
+   <summary>Kitty and Fish</summary>
+
+![Kitty and Fish](https://raw.githubusercontent.com/rootiest/dotfiles/main/.screenshots/kitty-fish.png)
+
+</details>
+
 ## Trying it out
 
-If you want to try out the configuration without installing it, you can use the
-following command:
+If you want to try out the configuration without installing it,
+you can use the following command:
 
 ```bash
 sh -c "$(curl -fsLS git.io/chezmoi)" -- init --apply rootiest --dry-run
@@ -104,7 +138,8 @@ This will show you what would be installed without actually installing it.
 
 ## Updating
 
-To update the Rootiest dotfiles, you can use the following command:
+To update the Rootiest dotfiles,
+you can use the following command:
 
 ```bash
 chezmoi update
