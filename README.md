@@ -124,6 +124,7 @@ A Neovim config built to work alongside this configuration.
 
 ## Credits
 
+- [chezmoi](https://github.com/twpayne/chezmoi)
 - [kitty](https://sw.kovidgoyal.net/kitty/)
 - [kitty-scrollback](https://github.com/mikesmithgh/kitty-scrollback.nvim)
 - [kitty-search](https://github.com/trygveaa/kitty-kitten-search)
