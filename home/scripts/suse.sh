@@ -11,7 +11,7 @@ install_deps() {
     yt-dlp yay plasma ffmpegthumbnailer
     noto-fonts-emoji otf-monaspace-nerd
     ttf-firacode-nerd ttf-noto-nerd
-    tailscale github-cli bw"
+    tailscale github-cli bw pipx"
     sudo $ins $pkgs
 }
 
@@ -34,8 +34,11 @@ install_browser() {.
 }
 
 install_extra_deps() {
-    # install github-cli
-    sudo $ins github-cli
+    # install extra deps
+    pkgs="github-cli pre-commit"
+    sudo $ins $pkgs
+    # install python deps
+    pipx install ggshield pre-commit
 }
 
 usage() {
@@ -76,9 +79,9 @@ done
 
 main() {
     "$DEPS" && install_deps
-    "$BROWSER" && install_browser
     "$NVIM" && install_nvim
     "$KITTY" && install_kitty
+    "$BROWSER" && install_browser
     "$EXTRA" && install_extra_deps
     exit 0
 }

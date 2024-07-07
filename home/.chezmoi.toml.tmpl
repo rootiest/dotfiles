@@ -3,6 +3,7 @@
 {{- $email := "" -}}
 {{- $bw_session := "" -}}
 {{- $gh_token  := "" -}}
+{{- $gg_token  := "" -}}
 {{- $openai_key  := "" -}}
 {{- $gpg_recipient  := "" -}}
 {{- $gpg_sign  := "" -}}
@@ -20,6 +21,7 @@
 {{- $full_name = (bitwarden "item" "27160a85-ed95-43ab-bd84-b1a600c2dbdb").login.username -}}
 {{- $bw_session = (bitwarden "item" "168c6c28-c7ef-459f-bb62-b1a600a52c15").login.password -}}
 {{- $gh_token = (bitwarden "item" "49dfa416-ecd3-42aa-8604-b1a600b34a06").login.password -}}
+{{- $gg_token = (bitwarden "item" "41593964-1c55-475c-a741-b1a600f8a39f").login.password -}}
 {{- $openai_key = (bitwarden "item" "bb7cc1b7-0c53-4bd4-b944-b1a600a6463b").login.password -}}
 {{- $gpg_recipient = "22AC9FB6A53826DF0C1A76D8928B182425A3D6FF" -}}
 {{- $gpg_sign = "22AC9FB6A53826DF0C1A76D8928B182425A3D6FF" -}}
@@ -29,6 +31,7 @@
 {{- $email = promptStringOnce . "email" "Email" -}}
 {{- $full_name = promptStringOnce . "full_name" "Full name" -}}
 {{- $gh_token = promptStringOnce . "gh_token" "GitHub Token" -}}
+{{- $gg_token = promptStringOnce . "gg_token" "GitGuardian Token" -}}
 {{- $openai_key = promptStringOnce . "openai_key" "OpenAI Key" -}}
 {{- $hasGUI = promptBoolOnce . "hasGUI" "Use a GUI" -}}
 {{- end -}}
@@ -51,6 +54,7 @@ encryption = "age"
     bw_session = {{ $bw_session | quote }}
     openai_api_key = {{ $openai_key | quote }}
     gh_token = {{ $gh_token | quote }}
+    gg_token = {{ $gg_token | quote }}
     gpg_recipient = {{ $gpg_recipient | quote }}
     gpg_sign = {{ $gpg_sign | quote }}
     gpg_encrypt = {{ $gpg_encrypt | quote }}

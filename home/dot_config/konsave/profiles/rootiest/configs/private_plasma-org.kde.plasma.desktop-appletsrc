@@ -585,7 +585,7 @@ aur=true
 checkOnStartup=true
 flatpak=true
 lastNews={"article":"Arch Linux 2024 Leader Election Results","date":"2024-04-15","link":"https://archlinux.org/news/arch-linux-2024-leader-election-results","dismissed":true}
-timestamp=1720275290905
+timestamp=1720358154367
 wrapper=/usr/bin/paru
 
 [Containments][9][Applets][69][Configuration][Upgrade]

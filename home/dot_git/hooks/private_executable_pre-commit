@@ -1,0 +1,10 @@
+#!/bin/sh
+
+if [ -f .git/hooks/pre-commit ]; then
+    if ! .git/hooks/pre-commit "$@"; then
+        echo 'Local pre-commit hook failed, please see output above'
+        exit 1
+    fi
+fi
+
+ggshield secret scan pre-commit "$@"

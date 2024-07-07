@@ -61,3 +61,6 @@ set -Ux fish_tmux_config $HOME/.config/tmux/tmux.conf
 
 ### VaultWarden Server ###
 set -gx BW_SERVER "https://vault.rootiest.dev"
+
+# Local PATHs
+set PATH $PATH $HOME/.local/bin

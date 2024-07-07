@@ -7,11 +7,11 @@ pkgs_aur="catppuccin-cursors-frappe nerd-fonts-git"
 
 install_deps() {
   pkgs="gnupg pass xclip fish mpd base-devel
-        wget curl fd fzf mpv imagemagick luarocks
+        wget curl fd fzf mpv imagemagick
         yt-dlp yay plasma ffmpegthumbnailer
         noto-fonts-emoji otf-monaspace-nerd
         ttf-firacode-nerd ttf-noto-nerd
-        github-cli tailscale bw"
+        tailscale bw pipx"
 }
 
 install_browser() {
@@ -19,7 +19,7 @@ install_browser() {
 }
 
 install_nvim() {
-  pkgs="$pkgs ripgrep nvim jq lazygit"
+  pkgs="$pkgs ripgrep nvim jq lazygit luarocks"
 }
 
 install_kitty() {
@@ -27,9 +27,15 @@ install_kitty() {
 }
 
 install_extra_deps() {
+  # install extra deps
+  pkgs="pre-commit github-cli"
+  sudo $ins $pkgs
+  # install aur packages
   for pkg in $pkgs_aur; do
     yay -S --noconfirm --needed "$pkg"
   done
+  # install python deps
+  pipx install ggshield pre-commit
 }
 
 usage() {
