@@ -2,3 +2,5 @@
 2bda0def1c5efb9157b2029e98c48178517f7bf8 faaab606afc98dd258338ab79e686d9622840cd1 Rootiest <chris@rootiest.com> 1720272453 -0400	commit: fix: :pencil2: Formatting fixes
 faaab606afc98dd258338ab79e686d9622840cd1 cfeceedb9b6109dfb46f4c60e102b32cdc455c71 Rootiest <chris@rootiest.com> 1720281845 -0400	commit: feat: :necktie: Smart Aliases
 cfeceedb9b6109dfb46f4c60e102b32cdc455c71 795a0ffe9a195a419aab47337b292f1997134628 Rootiest <chris@rootiest.com> 1720282941 -0400	commit: Clean up fetch aliases
+795a0ffe9a195a419aab47337b292f1997134628 1467c7370aa6808317d44e64a284e3ebc051d490 Rootiest <chris@rootiest.com> 1720329915 -0400	commit: feat: :package: Support appimage nvim
+1467c7370aa6808317d44e64a284e3ebc051d490 b253bfb724479a2b3061c61440ea1587f5e002ca Rootiest <chris@rootiest.com> 1720336645 -0400	commit: Define VaultWarden server
