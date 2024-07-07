@@ -10,6 +10,7 @@
 
 {{- $bw_session := (bitwarden "item" "168c6c28-c7ef-459f-bb62-b1a600a52c15").login.password -}}
 {{- $openai_key := (bitwarden "item" "bb7cc1b7-0c53-4bd4-b944-b1a600a6463b").login.password -}}
+{{- $gh_token := (bitwarden "item" "49dfa416-ecd3-42aa-8604-b1a600b34a06").login.password -}}
 
 {{- if eq $username "rootiest" -}}
 {{- $personal = true -}}
@@ -33,6 +34,7 @@ encryption = "age"
     editor = "nvim"
     bw_session = {{ $bw_session | quote }}
     openai_api_key = {{ $openai_key | quote }}
+    gh_token = {{ $gh_token | quote }}
     gpg_recipient = {{ $gpg_recipient | quote }}
     gpg_sign = {{ $gpg_sign | quote }}
     gpg_encrypt = {{ $gpg_encrypt | quote }}
