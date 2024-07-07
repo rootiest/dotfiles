@@ -1,24 +1,39 @@
 {{- $personal := false -}}
+{{- $full_name := "" -}}
+{{- $email := "" -}}
+{{- $bw_session := "" -}}
+{{- $gh_token  := "" -}}
+{{- $openai_key  := "" -}}
+{{- $gpg_recipient  := "" -}}
+{{- $gpg_sign  := "" -}}
+{{- $gpg_encrypt  := "" -}}
 {{- $key_sign  := "" -}}
-{{- $gpg_recipient := "" -}}
-{{- $gpg_sign := "" -}}
-{{- $gpg_encrypt := "" -}}
+{{- $hasGUI  := false -}}
+
 
 {{- $username := promptStringOnce . "username" "Username" -}}
-{{- $email := promptStringOnce . "email" "Email" -}}
-{{- $hasGUI := promptBoolOnce . "hasGUI" "Use a GUI" -}}
-
-{{- $bw_session := (bitwarden "item" "168c6c28-c7ef-459f-bb62-b1a600a52c15").login.password -}}
-{{- $openai_key := (bitwarden "item" "bb7cc1b7-0c53-4bd4-b944-b1a600a6463b").login.password -}}
-{{- $gh_token := (bitwarden "item" "49dfa416-ecd3-42aa-8604-b1a600b34a06").login.password -}}
 
 {{- if eq $username "rootiest" -}}
 {{- $personal = true -}}
+{{- $hasGUI = promptBoolOnce . "hasGUI" "Use a GUI" -}}
+{{- $email = (bitwarden "item" "5d6ad6bf-9140-4ac1-aee9-b1a600c4f6bf").login.username -}}
+{{- $full_name = (bitwarden "item" "27160a85-ed95-43ab-bd84-b1a600c2dbdb").login.username -}}
+{{- $bw_session = (bitwarden "item" "168c6c28-c7ef-459f-bb62-b1a600a52c15").login.password -}}
+{{- $gh_token = (bitwarden "item" "49dfa416-ecd3-42aa-8604-b1a600b34a06").login.password -}}
+{{- $openai_key = (bitwarden "item" "bb7cc1b7-0c53-4bd4-b944-b1a600a6463b").login.password -}}
 {{- $gpg_recipient = "22AC9FB6A53826DF0C1A76D8928B182425A3D6FF" -}}
 {{- $gpg_sign = "22AC9FB6A53826DF0C1A76D8928B182425A3D6FF" -}}
 {{- $gpg_encrypt = "22AC9FB6A53826DF0C1A76D8928B182425A3D6FF" -}}
 {{- $key_sign = "623CE33E5CF323D5" -}}
+{{- else -}}
+{{- $email = promptStringOnce . "email" "Email" -}}
+{{- $full_name = promptStringOnce . "full_name" "Full name" -}}
+{{- $gh_token = promptStringOnce . "gh_token" "GitHub Token" -}}
+{{- $openai_key = promptStringOnce . "openai_key" "OpenAI Key" -}}
+{{- $hasGUI = promptBoolOnce . "hasGUI" "Use a GUI" -}}
 {{- end -}}
+
+
 
 {{- if $personal }}
 encryption = "age"
@@ -28,6 +43,7 @@ encryption = "age"
 {{ end -}}
 [data]
     name = {{ $username | quote }}
+    full_name = {{ $full_name | quote }}
     email = {{ $email | quote }}
     personal = {{ $personal }}
     hasgui = {{ $hasGUI }}
@@ -38,4 +54,4 @@ encryption = "age"
     gpg_recipient = {{ $gpg_recipient | quote }}
     gpg_sign = {{ $gpg_sign | quote }}
     gpg_encrypt = {{ $gpg_encrypt | quote }}
-    key_sign = {{ $key_sign | quote }}
+    key_sign = {{ $gpg_sign | quote }}
