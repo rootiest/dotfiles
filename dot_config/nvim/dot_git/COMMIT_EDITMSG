@@ -1,1 +1,3 @@
-Update documentation
+docs: :memo: Improve lazy loading explanation
+
+Mention in documentation how excessive use of lazy loading may sometimes result in plugins appearing to be missing
