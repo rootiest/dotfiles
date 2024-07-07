@@ -1,4 +1,5 @@
 key.txt*
+*.log
 debug/
 wip/
 dot_git/
