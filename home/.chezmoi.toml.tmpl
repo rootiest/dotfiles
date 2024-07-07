@@ -1,0 +1,39 @@
+{{- $personal := false -}}
+{{- $key_sign  := "" -}}
+{{- $gpg_recipient := "" -}}
+{{- $gpg_sign := "" -}}
+{{- $gpg_encrypt := "" -}}
+
+{{- $username := promptStringOnce . "username" "Username" -}}
+{{- $email := promptStringOnce . "email" "Email" -}}
+{{- $hasGUI := promptBoolOnce . "hasGUI" "Use a GUI" -}}
+
+{{- $bw_session := (bitwarden "item" "168c6c28-c7ef-459f-bb62-b1a600a52c15").login.password -}}
+{{- $openai_key := (bitwarden "item" "bb7cc1b7-0c53-4bd4-b944-b1a600a6463b").login.password -}}
+
+{{- if eq $username "rootiest" -}}
+{{- $personal = true -}}
+{{- $gpg_recipient = "22AC9FB6A53826DF0C1A76D8928B182425A3D6FF" -}}
+{{- $gpg_sign = "22AC9FB6A53826DF0C1A76D8928B182425A3D6FF" -}}
+{{- $gpg_encrypt = "22AC9FB6A53826DF0C1A76D8928B182425A3D6FF" -}}
+{{- $key_sign = "623CE33E5CF323D5" -}}
+{{- end -}}
+
+{{- if $personal }}
+encryption = "age"
+[age]
+    identity = "~/.config/rootiest/age/key.txt"
+    recipient = "age1t2zvkztt5xkf6mua0mnywravlkk2h5xjrtnzyxxxn263dcx8u99qpt5ja5"
+{{ end -}}
+[data]
+    name = {{ $username | quote }}
+    email = {{ $email | quote }}
+    personal = {{ $personal }}
+    hasgui = {{ $hasGUI }}
+    editor = "nvim"
+    bw_session = {{ $bw_session | quote }}
+    openai_api_key = {{ $openai_key | quote }}
+    gpg_recipient = {{ $gpg_recipient | quote }}
+    gpg_sign = {{ $gpg_sign | quote }}
+    gpg_encrypt = {{ $gpg_encrypt | quote }}
+    key_sign = {{ $key_sign | quote }}
