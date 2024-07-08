@@ -92,6 +92,7 @@ No pre-requisites are required, just a working internet connection.
 - Other included themes: Tokyo Night, Ayu, and more
 - KDE, VSCode, firefox, chromium, neovim, kitty, fish, and more
 - Integrates seamlessly with my other repositories
+- Neovim integrates with chezmoi, kitty, and fish
 - Works with any Linux distribution
 - Automatic package installation on Arch, SUSE, and Debian based distros
 - Integrates with [BitWarden Password Manager](https://bitwarden.com/)
