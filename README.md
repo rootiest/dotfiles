@@ -65,7 +65,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
 
 ```
 
-The Rootiest dotfiles you will ever see!
+**The Rootiest dotfiles you will ever see!**
 
 ## Installation
 
@@ -94,6 +94,8 @@ No pre-requisites are required, just a working internet connection.
 
 ## Features
 
+A pleasing blend of mouse-driven and keyboard-driven interfaces.
+
 - Integrated [KDE Plasma Desktop](https://kde.org) profile
 - Customized [Kitty Terminal](https://sw.kovidgoyal.net/kitty/)
   Configuration
@@ -106,9 +108,15 @@ No pre-requisites are required, just a working internet connection.
   - Frappe for night mode
   - Latte for day mode
 - Other included themes: Tokyo Night, Ayu, and more
-- KDE, VSCode, firefox, chromium, neovim, kitty, fish, and more
+- KDE, neovim, kitty, fish, github, and more
 - Integrates seamlessly with my other repositories
-- Neovim integrates with chezmoi, kitty, and fish
+- Neovim, chezmoi, kitty, fish, and more tightly integrated
+- VIM motions are implemented in
+  [Neovim](https://docs.google.com/spreadsheets/d/15k_UgeY0C3j8tVQnR2hD_kNljB1AApG3x3gYrKtUAlw/),
+  [fish shell](https://fishshell.com/docs/current/interactive.html#vi-mode), and
+  [qmk](https://github.com/andrewjrae/qmk-vim).
+- Fully customized Neovim IDE for drop-in development
+- Neovim integration with less, scrollback, LazyGit, and more
 - Works with any Linux distribution
 - Automatic package installation on Arch, SUSE, and Debian based distros
 - Integrates with [BitWarden Password Manager](https://bitwarden.com/)
@@ -116,6 +124,14 @@ No pre-requisites are required, just a working internet connection.
 - Git credential management
 - Git commit signing with GPG
 - Encryption with AGE and GPG
+- Generates many useful environment variables
+- Scripted installation and updates for simple operation
+
+The desktop UI provides a more traditional mouse and keyboard experience
+with extensive keyboard mappings to increase productivity.
+
+The development IDE and tools follow similar principles with a much
+greater emphasis on keyboard-driven interaction.
 
 ## Screenshots
 
