@@ -9,3 +9,7 @@
 [".config/fish"]
     type = "git-repo"
     url = "https://github.com/rootiest/rootiest-fish.git"
+
+["qmk_firmware"]
+    type = "git-repo"
+    url = "https://github.com/rootiest/qmk_firmware"
