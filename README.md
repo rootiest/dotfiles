@@ -83,6 +83,7 @@ No pre-requisites are required, just a working internet connection.
   Configuration
 - Customized [Neovim](https://neovim.io/) Configuration
 - Customized [Fish Shell](https://fishshell.com/) Configuration
+- Custom Rootiest [QMK](https://qmk.fm/) Fork
 - Built for comfort and productivity
 - [Catppuccin](https://github.com/catppuccin/catppuccin) theme used
   across all applications:
@@ -90,6 +91,7 @@ No pre-requisites are required, just a working internet connection.
   - Latte for day mode
 - Other included themes: Tokyo Night, Ayu, and more
 - KDE, VSCode, firefox, chromium, neovim, kitty, fish, and more
+- Integrates seamlessly with my other repositories
 - Works with any Linux distribution
 - Automatic package installation on Arch, SUSE, and Debian based distros
 - Integrates with [BitWarden Password Manager](https://bitwarden.com/)
