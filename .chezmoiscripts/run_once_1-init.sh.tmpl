@@ -1,0 +1,44 @@
+#!{{ lookPath "bash" }}
+{{- $cpuCores := 1 }}
+{{- $cpuThreads := 1 }}
+{{- if eq .chezmoi.os "darwin" }}
+{{-   $cpuCores = (output "sysctl" "-n" "hw.physicalcpu_max") | trim | atoi }}
+{{-   $cpuThreads = (output "sysctl" "-n" "hw.logicalcpu_max") | trim | atoi }}
+{{- else if eq .chezmoi.os "linux" }}
+{{-   $cpuCores = (output "sh" "-c" "lscpu --online --parse | grep --invert-match '^#' | sort --field-separator=',' --key='2,4' --unique | wc --lines") | trim | atoi }}
+{{-   $cpuThreads = (output "sh" "-c" "lscpu --online --parse | grep --invert-match '^#' | wc --lines") | trim | atoi }}
+{{- else if eq .chezmoi.os "windows" }}
+{{-   $cpuCores = (output "powershell.exe" "-NoProfile" "-NonInteractive" "-Command" "(Get-CimInstance -ClassName 'Win32_Processor').NumberOfCores") | trim | atoi }}
+{{-   $cpuThreads = (output "powershell.exe" "-NoProfile" "-NonInteractive" "-Command" "(Get-CimInstance -ClassName 'Win32_Processor').NumberOfLogicalProcessors") | trim | atoi }}
+{{- end }}
+
+{{- $chassisType := "desktop" }}
+{{- if eq .chezmoi.os "darwin" }}
+{{-   if contains "MacBook" (output "sysctl" "-n" "hw.model") }}
+{{-     $chassisType = "laptop" }}
+{{-   else }}
+{{-     $chassisType = "desktop" }}
+{{-   end }}
+{{- else if eq .chezmoi.os "linux" }}
+{{-   $chassisType = (output "hostnamectl" "--json=short" | mustFromJson).Chassis }}
+{{- else if eq .chezmoi.os "windows" }}
+{{-   $chassisType = (output "powershell.exe" "-NoProfile" "-NonInteractive" "-Command" "if ((Get-CimInstance -Class Win32_Battery | Measure-Object).Count -gt 0) { Write-Output 'laptop' } else { Write-Output 'desktop' }") | trim }}
+{{- end }}
+
+echo '
+Welcome {{ .name }}!
+
+Detected Specifications:
+- Full Name: {{ .full_name }}
+- Email: {{ .email }}
+{{ if hasKey .chezmoi.osRelease "id" }}- OS: {{ .chezmoi.osRelease.id }}
+{{ else }}- OS: {{ .chezmoi.os }}
+{{ end }}{{ if hasKey .chezmoi.osRelease "version" }}- Version: {{ .chezmoi.osRelease.version }}
+{{ end }}{{ if hasKey .chezmoi.kernel "osrelease" }}- Kernel: {{ .chezmoi.kernel.osrelease }}
+{{ end }}{{ if .chezmoi.hostname }}- Hostname: {{ .chezmoi.hostname }}
+{{ end }}{{ if hasKey .chezmoi.osRelease "arch" }}- Architecture: {{ .chezmoi.osRelease.arch }}
+{{ end }}- CPU Cores: {{ $cpuCores }}
+- Chassis: {{ $chassisType }}
+
+Performing dotfiles setup...
+'

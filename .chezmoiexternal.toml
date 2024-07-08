@@ -1,0 +1,11 @@
+[".config/kitty"]
+    type = "git-repo"
+    url = "https://github.com/rootiest/rootiest-kitty.git"
+
+[".config/nvim"]
+    type = "git-repo"
+    url = "https://github.com/rootiest/rootiest-nvim.git"
+
+[".config/fish"]
+    type = "git-repo"
+    url = "https://github.com/rootiest/rootiest-fish.git"

@@ -1,0 +1,37 @@
+[user]
+  name = {{ .name }}
+  email = {{ .email }}
+  {{- if .key_sign }}
+  signingkey = {{ .key_sign }}
+  {{- end }}
+
+[commit]
+  {{- if .key_sign }}
+  gpgsign = true
+  {{- end }}
+
+[core]
+  editor = {{ .editor }}
+  autocrlf = input
+  	hooksPath = /home/{{ .name }}/.git/hooks
+
+[init]
+  defaultBranch = main
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+
+{{- if eq .name "rootiest" }}
+[url "git@github.com:rootiest"]
+  insteadOf = https://github.com/rootiest
+{{- end }}
+
