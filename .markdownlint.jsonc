@@ -1,0 +1,16 @@
+{
+  "default": true,
+  "MD007": {
+    "indent": 4
+  },
+  "MD033": {
+    "allowed_elements": [
+      "details",
+      "summary"
+    ]
+  },
+  "MD003": {
+    "style": "atx"
+  },
+  "no-hard-tabs": true
+}
