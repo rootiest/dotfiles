@@ -133,7 +133,7 @@ TerminalService=kitty.desktop
 XftAntialias=true
 XftHintStyle=hintnone
 XftSubPixel=rgb
-fixed=MonaspaceKrypton Nerd Font,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+fixed=Iosevka Nerd Font,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 font=NotoSans NF,10,-1,5,900,0,0,0,0,0,0,0,0,0,0,1,Regular
 menuFont=NotoSans NF,10,-1,5,900,0,0,0,0,0,0,0,0,0,0,1,Regular
 smallestReadableFont=NotoSans NF,8,-1,5,900,0,0,0,0,0,0,0,0,0,0,1,Regular
@@ -142,7 +142,7 @@ toolBarFont=NotoSans NF,10,-1,5,900,0,0,0,0,0,0,0,0,0,0,1,Regular
 [KDE]
 LookAndFeelPackage=org.kde.breezedark.desktop
 ShowDeleteCommand=false
-widgetStyle=Breeze
+widgetStyle=kvantum
 
 [KFileDialog Settings]
 Allow Expansion=false

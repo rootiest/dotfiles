@@ -280,7 +280,7 @@ DialogWidth=720
 
 [Containments][64][Applets][66][Configuration][General]
 iconSpacing=0
-launchers=applications:firefox.desktop,[a9acb59d-903c-4fb9-8ca4-1be2126a7a9e]\napplications:kitty-2.desktop,preferred://filemanager,[c0ef72a1-fbb2-41ad-bfcb-7242eaa7590e\\,84a483ec-9308-44a2-8036-d089c3338402]\napplications:kitty.desktop,applications:code.desktop,applications:NeoKitty.desktop
+launchers=applications:firefox.desktop,[a9acb59d-903c-4fb9-8ca4-1be2126a7a9e]\napplications:kitty-2.desktop,preferred://filemanager,[84a483ec-9308-44a2-8036-d089c3338402\\,c0ef72a1-fbb2-41ad-bfcb-7242eaa7590e]\napplications:kitty.desktop,applications:code.desktop,applications:NeoKitty.desktop
 
 [Containments][64][General]
 AppletOrder=65;66
@@ -483,14 +483,14 @@ immutability=1
 plugin=org.kde.plasma.brightness
 
 [Containments][9][Applets][23][Configuration]
-PreloadWeight=5
+PreloadWeight=0
 
 [Containments][9][Applets][24]
 immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][9][Applets][24][Configuration]
-PreloadWeight=5
+PreloadWeight=0
 
 [Containments][9][Applets][25]
 immutability=1
@@ -585,7 +585,7 @@ aur=true
 checkOnStartup=true
 flatpak=true
 lastNews={"article":"Arch Linux 2024 Leader Election Results","date":"2024-04-15","link":"https://archlinux.org/news/arch-linux-2024-leader-election-results","dismissed":true}
-timestamp=1720451501157
+timestamp=1720555107155
 wrapper=/usr/bin/paru
 
 [Containments][9][Applets][69][Configuration][Upgrade]
