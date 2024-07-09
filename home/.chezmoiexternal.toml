@@ -1,15 +1,82 @@
+# Rootiest Kitty Config
 [".config/kitty"]
-    type = "git-repo"
-    url = "https://github.com/rootiest/rootiest-kitty.git"
+type = "git-repo"
+url = "https://github.com/rootiest/rootiest-kitty.git"
+refreshPeriod = "168h"
 
+# Rootiest Neovim
 [".config/nvim"]
-    type = "git-repo"
-    url = "https://github.com/rootiest/rootiest-nvim.git"
+type = "git-repo"
+url = "https://github.com/rootiest/rootiest-nvim.git"
+refreshPeriod = "168h"
 
+# Rootiest Fish Config
 [".config/fish"]
-    type = "git-repo"
-    url = "https://github.com/rootiest/rootiest-fish.git"
+type = "git-repo"
+url = "https://github.com/rootiest/rootiest-fish.git"
+refreshPeriod = "168h"
 
+# Rootiest QMK Firmware
 ["qmk_firmware"]
-    type = "git-repo"
-    url = "https://github.com/rootiest/qmk_firmware"
+type = "git-repo"
+url = "https://github.com/rootiest/qmk_firmware"
+
+# Monospace Nerd Font
+[".local/share/fonts/nerd/monaspace"]
+type = "archive"
+url = "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/Monaspace.tar.xz"
+include = ["*.otf", "*.ttf"]
+refreshPeriod = "744h"
+
+# Symbols Nerd Font
+[".local/share/fonts/nerd/symbols"]
+type = "archive"
+url = "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/NerdFontsSymbolsOnly.tar.xz"
+include = ["*.otf", "*.ttf"]
+refreshPeriod = "744h"
+
+# IosevkaTerm Nerd Font
+[".local/share/fonts/nerd/iosevka-term"]
+type = "archive"
+url = "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/IosevkaTerm.tar.xz"
+include = ["*.otf", "*.ttf"]
+refreshPeriod = "744h"
+
+# Iosevka Nerd Font
+[".local/share/fonts/nerd/iosevka"]
+type = "archive"
+url = "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/Iosevka.tar.xz"
+include = ["*.otf", "*.ttf"]
+refreshPeriod = "744h"
+
+# Cascadia Code Nerd Font
+[".local/share/fonts/nerd/cascadia"]
+type = "archive"
+url = "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/CascadiaCode.tar.xz"
+include = ["*.otf", "*.ttf"]
+refreshPeriod = "744h"
+
+# FiraCode Nerd Font
+[".local/share/fonts/nerd/firacode"]
+type = "archive"
+url = "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FiraCode.tar.xz"
+include = ["*.otf", "*.ttf"]
+refreshPeriod = "744h"
+
+# Noto Nerd Font
+[".local/share/fonts/nerd/noto"]
+type = "archive"
+url = "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/Noto.tar.xz"
+include = ["*.otf", "*.ttf"]
+refreshPeriod = "744h"
+
+# OverWatch Font
+[".local/share/fonts/big-noodle-too-oblique.ttf"]
+type = "file"
+url = "https://github.com/caleb-yun/overwidget-rmskin/raw/be76b61cff94d290931f0c379b19d1d1b79d21e6/@Resources/Fonts/big-noodle-too-oblique.ttf"
+
+# Catppuccin Wallpapers
+[".local/share/wallpapers/catppuccin"]
+type = "git-repo"
+url = "https://github.com/zhichaoh/catppuccin-wallpapers.git"
+include = ["*.png", "*.jpg"]
