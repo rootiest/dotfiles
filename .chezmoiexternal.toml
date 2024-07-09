@@ -79,4 +79,3 @@ url = "https://github.com/caleb-yun/overwidget-rmskin/raw/be76b61cff94d290931f0c
 [".local/share/wallpapers/catppuccin"]
 type = "git-repo"
 url = "https://github.com/zhichaoh/catppuccin-wallpapers.git"
-include = ["*.png", "*.jpg"]
