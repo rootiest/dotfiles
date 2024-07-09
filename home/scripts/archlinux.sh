@@ -9,9 +9,14 @@ install_deps() {
   pkgs="gnupg pass xclip fish mpd base-devel
         wget curl fd fzf mpv imagemagick
         yt-dlp yay plasma ffmpegthumbnailer
-        noto-fonts-emoji otf-monaspace-nerd
-        ttf-firacode-nerd ttf-noto-nerd
-        tailscale bw pipx"
+        noto-fonts-emoji
+        otf-monaspace-nerd
+        ttf-firacode-nerd
+        ttf-noto-nerd
+        ttf-nerd-fonts-symbols
+        ttf-cascadia-code-nerd
+        ttf-iosevkaterm-nerd
+        tailscale bw pipx github-cli lazygit"
 }
 
 install_browser() {
