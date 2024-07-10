@@ -1,0 +1,23 @@
+{
+    "KPackageStructure": "KWin/Aurorae",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "info@himdek.com",
+                "Name": "Himprakash Deka"
+            }
+        ],
+        "Category": "Plasma 6 Window Decorations",
+        "ServiceTypes": [
+            "KWin/Aurorae"
+        ],
+        "EnabledByDefault": true,
+        "Name": "Utterly-Round-Light",
+        "Description" : "MacOS inspired Round Light Translucent Window Decoration for Plasma 6",
+        "Id": "Utterly-Round-Light",
+        "Version": "1.2",
+        "License": "GPL-2.0+",
+        "X-KPackage-Dependencies": [
+        ]
+    }
+}
