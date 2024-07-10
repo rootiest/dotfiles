@@ -186,11 +186,14 @@ This will update the configuration to the latest version.
 
 These are included in Rootiest dotfiles, but can be used independently.
 
-[Rootiest Fish Configuration](https://github.com/rootiest/rootiest-fish) -
-Fish shell configuration that pairs well with this configuration.
-
 [Rootiest Neovim Configuration](https://github.com/rootiest/rootiest-nvim) -
 A Neovim config built to work alongside this configuration.
+
+[Rootiest Kitty Configuration](https://github.com/rootiest/rootiest-kitty) -
+Kitty terminal configuration that pairs well with this configuration.
+
+[Rootiest Fish Configuration](https://github.com/rootiest/rootiest-fish) -
+Fish shell configuration that pairs well with this configuration.
 
 ## Credits
 
