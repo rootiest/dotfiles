@@ -67,3 +67,6 @@ encryption = "age"
     gpg_sign = {{ $gpg_sign | quote }}
     gpg_encrypt = {{ $gpg_encrypt | quote }}
     key_sign = {{ $key_sign | quote }}
+
+[hooks.read-source-state.pre]
+    command = ".local/share/chezmoi/.install-password-manager.sh"
