@@ -105,10 +105,10 @@ A pleasing blend of mouse-driven and keyboard-driven interfaces.
 - Built for comfort and productivity
 - [Catppuccin](https://github.com/catppuccin/catppuccin) theme used
   across all applications:
-    - Frappe for night mode
-    - Latte for day mode
-- Other included themes: Tokyo Night, Ayu, and more
-- KDE, neovim, kitty, fish, github, and more
+  - Frappe for night mode
+  - Latte for day mode
+- Other included themes: Tokyo Night, Ayu, and many more
+- KDE, NeoVim, kitty, fish, github, and more
 - Integrates seamlessly with my other repositories
 - Neovim, chezmoi, kitty, fish, and more tightly integrated
 - VIM motions are implemented in
