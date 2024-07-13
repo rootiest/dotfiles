@@ -81,10 +81,10 @@ type = "git-repo"
 url = "https://github.com/zhichaoh/catppuccin-wallpapers.git"
 
 # Harmony 2 Sound Pack
-[".local/share/sounds/harmony2"]
-type = "archive"
-url = "http://git.gianmarco.gg/gianmarco/harmony2/releases/download/2.0.2/ds-harmony2-2.0.2.tar.gz"
-include = ["*.ogg", "*.theme"]
+# [".local/share/sounds/harmony2"]
+# type = "archive"
+# url = "http://git.gianmarco.gg/gianmarco/harmony2/releases/download/2.0.2/ds-harmony2-2.0.2.tar.gz"
+# include = ["*.ogg", "*.theme"]
 
 # Bibata Modern Classic Cursor
 [".local/share/icons/bibata-modern-classic"]

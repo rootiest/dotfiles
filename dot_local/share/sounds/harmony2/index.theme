@@ -1,0 +1,9 @@
+[Sound Theme]
+Name=Harmony 2
+Comment=Harmony 2 Sound Theme for KDE Plasma
+Comment[it]=Tema sonoro Harmony 2 per KDE Plasma
+Directories=stereo
+Example=theme-demo
+
+[stereo]
+OutputProfile=stereo
