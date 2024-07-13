@@ -9,10 +9,10 @@
   },
   "logo": {
     "type": "kitty-direct",
-    "source": "~/eos.png",
+    "source": "~/.logos/eos.png",
     "position": "left",
     "padding": {
-      "top": 16,
+      "top": 16
     },
     "preserveAspectRatio": true
   },
@@ -22,7 +22,7 @@
       "color": {
         "user": "green",
         "at": "blue",
-        "host": "red",
+        "host": "red"
       }
     },
     {
@@ -81,9 +81,7 @@
       "detectTotal": false
     },
     {
-      "type": "publicip",
-      "showIpv4": true,
-      "showIpv6": false,
+      "type": "publicip"
     },
     {
       "type": "weather",
