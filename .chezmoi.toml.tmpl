@@ -10,12 +10,16 @@
 {{- $gpg_encrypt  := "" -}}
 {{- $key_sign  := "" -}}
 {{- $hasGUI  := false -}}
+{{- $autoCommit := false -}}
+{{- $autoPush := false -}}
 
 {{- $username := promptStringOnce . "username" "Username" -}}
 
 {{- if eq $username "rootiest" -}}
   {{- $personal = true -}}
   {{- $hasGUI = promptBoolOnce . "hasGUI" "Use GUI y/n" -}}
+  {{- $autoCommit = promptBoolOnce . "autoCommit" "Auto commit y/n" -}}
+  {{- $autoPush = promptBoolOnce . "autoPush" "Auto push y/n" -}}
   {{- $email = (bitwarden "item" "CHEZMOI_GITHUB_EMAIL").login.username -}}
   {{- $full_name = (bitwarden "item" "CHEZMOI_FULL_NAME").login.username -}}
   {{- $bw_session = (bitwarden "item" "CHEZMOI_BW_SESSION").login.password -}}
@@ -26,6 +30,7 @@
   {{- $gpg_sign = (bitwarden "item" "CHEZMOI_GPG_SIGN").login.password -}}
   {{- $gpg_encrypt = (bitwarden "item" "CHEZMOI_GPG_ENCRYPT").login.password -}}
   {{- $key_sign = (bitwarden "item" "CHEZMOI_GPG_KEY").login.password -}}
+  {{- $age_recipient = (bitwarden "item" "CHEZMOI_AGE_RECIPIENT").login.password -}}
 {{- else -}}
   {{- $email = promptStringOnce . "email" "Email" -}}
   {{- $full_name = promptStringOnce . "full_name" "Full name" -}}
@@ -39,7 +44,10 @@
 encryption = "age"
 [age]
     identity = "~/.config/rootiest/age/key.txt"
-    recipient = "age1t2zvkztt5xkf6mua0mnywravlkk2h5xjrtnzyxxxn263dcx8u99qpt5ja5"
+    recipient = {{ $age_recipient | quote }}
+[git]
+    autoCommit = {{ $autoCommit }}
+    autoPush = {{ $autoPush }}
 {{ end -}}
 [data]
     name = {{ $username | quote }}
