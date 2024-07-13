@@ -105,8 +105,8 @@ A pleasing blend of mouse-driven and keyboard-driven interfaces.
 - Built for comfort and productivity
 - [Catppuccin](https://github.com/catppuccin/catppuccin) theme used
   across all applications:
-  - Frappe for night mode
-  - Latte for day mode
+    - Frappe for night mode
+    - Latte for day mode
 - Other included themes: Tokyo Night, Ayu, and many more
 - KDE, NeoVim, kitty, fish, github, and more
 - Integrates seamlessly with my other repositories
