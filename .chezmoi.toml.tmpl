@@ -20,7 +20,9 @@
   {{- $personal = true -}}
   {{- $hasGUI = promptBoolOnce . "hasGUI" "Use GUI y/n" -}}
   {{- $autoCommit = promptBoolOnce . "autoCommit" "Auto commit y/n" -}}
-  {{- $autoPush = promptBoolOnce . "autoPush" "Auto push y/n" -}}
+  {{- if $autoCommit -}}
+    {{- $autoPush = promptBoolOnce . "autoPush" "Auto push y/n" -}}
+  {{- end -}}
   {{- $email = (bitwarden "item" "CHEZMOI_GITHUB_EMAIL").login.username -}}
   {{- $full_name = (bitwarden "item" "CHEZMOI_FULL_NAME").login.username -}}
   {{- $bw_session = (bitwarden "item" "CHEZMOI_BW_SESSION").login.password -}}
