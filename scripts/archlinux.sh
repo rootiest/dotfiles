@@ -3,7 +3,7 @@
 set -o errexit -o nounset
 
 ins="pacman -S --noconfirm --needed"
-pkgs_aur="catppuccin-cursors-frappe nerd-fonts-git"
+pkgs_aur="nerd-fonts-git"
 
 install_deps() {
   pkgs="gnupg pass xclip fish mpd base-devel
