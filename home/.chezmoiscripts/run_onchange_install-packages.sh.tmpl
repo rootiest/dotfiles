@@ -39,5 +39,16 @@ echo "Install themes..."
 curl -LsSO "https://raw.githubusercontent.com/catppuccin/gtk/v1.0.3/install.py"
 python3 install.py {{ .catFlavor }} {{ .catAccent }}
 
+echo "Done."
+
+echo "Install oh-my-fish..."
+
+curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install > install
+fish install --noninteractive --yes
+
+echo "Done."
+
+exit 0
+
 trap bye EXIT
 
