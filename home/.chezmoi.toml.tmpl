@@ -13,6 +13,13 @@
 {{- $hasGUI  := false -}}
 {{- $autoCommit := false -}}
 {{- $autoPush := false -}}
+{{- $catFlavor := "" -}}
+{{- $catAccent := "" -}}
+{{- $flavors := list "frappe" "latte" "macchiato" "mocha" -}}
+{{- $accents := list "rosewater" "flamingo" "pink" "mauve" "red" "maroon" "peach" "yellow" "green" "teal" "sky" "sapphire" "blue" "lavender" -}}
+
+{{- writeToStdout "Welcome to Rootiest Dotfiles!\n" -}}
+{{- writeToStdout "Please answer the following questions:\n" -}}
 
 {{- $username := promptStringOnce . "username" "Username" -}}
 
@@ -23,6 +30,7 @@
   {{- if $autoCommit -}}
     {{- $autoPush = promptBoolOnce . "autoPush" "Auto push y/n" -}}
   {{- end -}}
+  {{- writeToStdout "Please wait for secrets to be retrieved...\r" -}}
   {{- $email = (bitwarden "item" "CHEZMOI_GITHUB_EMAIL").login.username -}}
   {{- $full_name = (bitwarden "item" "CHEZMOI_FULL_NAME").login.username -}}
   {{- $bw_session = (bitwarden "item" "CHEZMOI_BW_SESSION").login.password -}}
@@ -34,6 +42,7 @@
   {{- $gpg_encrypt = (bitwarden "item" "CHEZMOI_GPG_ENCRYPT").login.password -}}
   {{- $key_sign = (bitwarden "item" "CHEZMOI_GPG_KEY").login.password -}}
   {{- $age_recipient = (bitwarden "item" "CHEZMOI_AGE_RECIPIENT").login.password -}}
+  {{- writeToStdout "Secrets successfully retrieved.           \n" -}}
 {{- else -}}
   {{- $email = promptStringOnce . "email" "Email" -}}
   {{- $full_name = promptStringOnce . "full_name" "Full name" -}}
@@ -42,6 +51,16 @@
   {{- $openai_key = promptStringOnce . "openai_key" "OpenAI Key" -}}
   {{- $hasGUI = promptBoolOnce . "hasGUI" "Use a GUI" -}}
 {{- end -}}
+
+{{- writeToStdout "Global Theme:\n" -}}
+{{- $catFlavor := promptChoiceOnce . "catFlavor" "Catppuccin Flavor (default:frappe)" $flavors -}}
+{{- $catAccent := promptChoiceOnce . "catAccent" "Catppuccin Accent (default:mauve)" $accents -}}
+{{- writeToStdout "Catppuccin " -}}
+{{- writeToStdout $catFlavor -}}
+{{- writeToStdout " - " -}}
+{{- writeToStdout $catAccent -}}
+
+{{- writeToStdout "\nThank you!\nEnjoy using Rootiest Dotfiles!\n" -}}
 
 {{- if $personal }}
 encryption = "age"
@@ -67,6 +86,8 @@ encryption = "age"
     gpg_sign = {{ $gpg_sign | quote }}
     gpg_encrypt = {{ $gpg_encrypt | quote }}
     key_sign = {{ $key_sign | quote }}
+    catFlavor = {{ $catFlavor | quote }}
+    catAccent = {{ $catAccent | quote }}
 
 [hooks.read-source-state.pre]
     command = ".local/share/chezmoi/.install-password-manager.sh"
