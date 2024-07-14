@@ -34,5 +34,10 @@ msg "Execute $0..."
 
 {{ end -}}
 
+echo "Install themes..."
+
+curl -LsSO "https://raw.githubusercontent.com/catppuccin/gtk/v1.0.3/install.py"
+python3 install.py {{ .catFlavor }} {{ .catAccent }}
+
 trap bye EXIT
 
