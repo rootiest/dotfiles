@@ -48,6 +48,23 @@ fish install --noninteractive --yes
 
 echo "Done."
 
+echo "Install AppImages..."
+
+if [ ! -d $HOME/AppImages ]; then
+  mkdir $HOME/AppImages/
+fi
+
+orca_version=$(curl -Ls https://api.github.com/repos/SoftFever/OrcaSlicer/releases/latest | sed 's/[()",{} ]/\n/g' | grep -oi "https.*linux.*mage$" | head -1)
+wget -q -o $HOME/AppImages/OrcaSlicer.AppImage $orca_version
+
+via_version=$(curl -Ls https://api.github.com/repos/the-via/releases/releases/latest | sed 's/[()",{} ]/\n/g' | grep -oi "https.*linux.*mage$" | head -1)
+wget -q -o $HOME/AppImages/Via.AppImage $via_version
+
+balena_version=$(curl -Ls https://api.github.com/repos/balena-io/etcher/releases/latest | sed 's/[()",{} ]/\n/g' | grep -oi "https.*.*mage$" | head -1)
+wget -q -o $HOME/AppImages/BalenaEtcher.AppImage $balena_version
+
+echo "Done."
+
 exit 0
 
 trap bye EXIT
