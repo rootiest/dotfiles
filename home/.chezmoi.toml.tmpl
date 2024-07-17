@@ -5,6 +5,7 @@
 {{- $gh_token  := "" -}}
 {{- $gg_token  := "" -}}
 {{- $openai_key  := "" -}}
+{{- $wakatime_key  := "" -}}
 {{- $gpg_recipient  := "" -}}
 {{- $gpg_sign  := "" -}}
 {{- $gpg_encrypt  := "" -}}
@@ -37,6 +38,7 @@
   {{- $gh_token = (bitwarden "item" "CHEZMOI_GITHUB_TOKEN").login.password -}}
   {{- $gg_token = (bitwarden "item" "CHEZMOI_GITGUARDIAN_API_KEY").login.password -}}
   {{- $openai_key = (bitwarden "item" "CHEZMOI_OPENAI_API_KEY").login.password -}}
+  {{- $wakatime_key = (bitwarden "item" "CHEZMOI_WAKATIME_API_KEY").login.password -}}
   {{- $gpg_recipient = (bitwarden "item" "CHEZMOI_GPG_RECIPIENT").login.password -}}
   {{- $gpg_sign = (bitwarden "item" "CHEZMOI_GPG_SIGN").login.password -}}
   {{- $gpg_encrypt = (bitwarden "item" "CHEZMOI_GPG_ENCRYPT").login.password -}}
@@ -49,6 +51,7 @@
   {{- $gh_token = promptStringOnce . "gh_token" "GitHub Token" -}}
   {{- $gg_token = promptStringOnce . "gg_token" "GitGuardian Token" -}}
   {{- $openai_key = promptStringOnce . "openai_key" "OpenAI Key" -}}
+  {{- $wakatime_key = promptStringOnce . "wakatime_key" "Wakatime Key" -}}
   {{- $hasGUI = promptBoolOnce . "hasGUI" "Use a GUI" -}}
 {{- end -}}
 
@@ -80,6 +83,7 @@ encryption = "age"
     editor = "nvim"
     bw_session = {{ $bw_session | quote }}
     openai_api_key = {{ $openai_key | quote }}
+    wakatime_api_key = {{ $wakatime_key | quote }}
     gh_token = {{ $gh_token | quote }}
     gg_token = {{ $gg_token | quote }}
     gpg_recipient = {{ $gpg_recipient | quote }}
