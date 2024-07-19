@@ -1,11 +1,9 @@
-[submodule "rootiest-kitty"]
-	path = dot_config/kitty
-  url = https://github.com/rootiest/rootiest-kitty.git
-
-[submodule "rootiest-fish"]
-	path = dot_config/fish
-  url = https://github.com/rootiest/rootiest-fish.git
-
-[submodule "rootiest-nvim"]
-	path = dot_config/nvim
+[submodule "home/dot_config/fish"]
+	path = home/dot_config/fish
+	url = https://github.com/rootiest/rootiest-fish.git
+[submodule "home/dot_config/kitty"]
+	path = home/dot_config/kitty
+	url = https://github.com/rootiest/rootiest-kitty.git
+[submodule "home/dot_config/nvim"]
+	path = home/dot_config/nvim
 	url = https://github.com/rootiest/rootiest-nvim.git
