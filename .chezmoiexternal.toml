@@ -1,20 +1,20 @@
-# Rootiest Kitty Config
-[".config/kitty"]
-type = "git-repo"
-url = "https://github.com/rootiest/rootiest-kitty.git"
-refreshPeriod = "168h"
-
-# Rootiest Neovim
-[".config/nvim"]
-type = "git-repo"
-url = "https://github.com/rootiest/rootiest-nvim.git"
-refreshPeriod = "168h"
-
-# Rootiest Fish Config
-[".config/fish"]
-type = "git-repo"
-url = "https://github.com/rootiest/rootiest-fish.git"
-refreshPeriod = "168h"
+# # Rootiest Kitty Config
+# [".config/kitty"]
+# type = "git-repo"
+# url = "https://github.com/rootiest/rootiest-kitty.git"
+# refreshPeriod = "168h"
+#
+# # Rootiest Neovim
+# [".config/nvim"]
+# type = "git-repo"
+# url = "https://github.com/rootiest/rootiest-nvim.git"
+# refreshPeriod = "168h"
+#
+# # Rootiest Fish Config
+# [".config/fish"]
+# type = "git-repo"
+# url = "https://github.com/rootiest/rootiest-fish.git"
+# refreshPeriod = "168h"
 
 # Rootiest QMK Firmware
 ["qmk_firmware"]
