@@ -4,3 +4,6 @@
 [submodule "home/dot_config/nvim"]
 	path = home/dot_config/nvim
   url = https://github.com/rootiest/rootiest-nvim.git
+[submodule "home/dot_config/kitty"]
+	path = home/dot_config/kitty
+	url = https://github.com/rootiest/rootiest-kitty.git
