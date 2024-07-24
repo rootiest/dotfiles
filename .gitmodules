@@ -6,4 +6,5 @@
   url = https://github.com/rootiest/rootiest-nvim.git
 [submodule "home/dot_config/kitty"]
 	path = home/dot_config/kitty
-	url = https://github.com/rootiest/rootiest-kitty.git
+  url = https://github.com/rootiest/rootiest-kitty.git
+  branch = main
