@@ -6,6 +6,7 @@
 {{- $gg_token  := "" -}}
 {{- $openai_key  := "" -}}
 {{- $wakatime_key  := "" -}}
+{{- $wakatime_url  := "" -}}
 {{- $gpg_recipient  := "" -}}
 {{- $gpg_sign  := "" -}}
 {{- $gpg_encrypt  := "" -}}
@@ -39,6 +40,7 @@
   {{- $gg_token = (bitwarden "item" "CHEZMOI_GITGUARDIAN_API_KEY").login.password -}}
   {{- $openai_key = (bitwarden "item" "CHEZMOI_OPENAI_API_KEY").login.password -}}
   {{- $wakatime_key = (bitwarden "item" "CHEZMOI_WAKATIME_API_KEY").login.password -}}
+  {{- $wakatime_url = (bitwarden "item" "CHEZMOI_WAKATIME_API_URL").login.password -}}
   {{- $gpg_recipient = (bitwarden "item" "CHEZMOI_GPG_RECIPIENT").login.password -}}
   {{- $gpg_sign = (bitwarden "item" "CHEZMOI_GPG_SIGN").login.password -}}
   {{- $gpg_encrypt = (bitwarden "item" "CHEZMOI_GPG_ENCRYPT").login.password -}}
@@ -84,6 +86,7 @@ encryption = "age"
     bw_session = {{ $bw_session | quote }}
     openai_api_key = {{ $openai_key | quote }}
     wakatime_api_key = {{ $wakatime_key | quote }}
+    wakatime_api_url = {{ $wakatime_url | quote }}
     gh_token = {{ $gh_token | quote }}
     gg_token = {{ $gg_token | quote }}
     gpg_recipient = {{ $gpg_recipient | quote }}
