@@ -22,3 +22,16 @@ gui:
 
   authorColors:
     "*": "#babbf1"
+
+git:
+  paging:
+    colorArg: always
+    useConfig: true
+
+customCommands:
+  - key: "C"
+    command: "git cz c"
+    description: "commit with commitizen"
+    context: "files"
+    loadingText: "opening commitizen commit tool"
+    subprocess: true
