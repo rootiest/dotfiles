@@ -1,0 +1,47 @@
+[Desktop Action Projects]
+Exec=kitty -c ~/.config/kitty/kitty-projects.conf
+Icon=utilities-terminal-symbolic
+Name=Open Projects Workspace
+
+[Desktop Action Restore]
+Exec=kitty --start-as=maximized --session sessions/saved-session.conf
+Icon=utilities-terminal-symbolic
+Name=Restore Session
+
+[Desktop Action Borderless]
+Exec=kitty -c ~/.config/kitty/kitty-borderless.conf
+Icon=utilities-terminal-symbolic
+Name=Open Borderless Window
+
+[Desktop Action Nvim]
+Exec=kitty -c ~/.config/kitty/kitty-nvim.conf
+Icon=nvim-symbolic
+Name=Open NeoVim Window
+
+[Desktop Action Small]
+Exec=kitty -c ~/.config/kitty/kitty-min.conf
+Icon=utilities-terminal-symbolic
+Name=Open Small Window
+
+[Desktop Entry]
+Actions=Small;Borderless;Nvim;Projects;Restore;
+Categories=System;TerminalEmulator;
+Comment[en_US]=Fast, feature-rich, GPU based terminal
+Comment=Fast, feature-rich, GPU based terminal
+Exec=kitty
+GenericName[en_US]=Terminal emulator
+GenericName=Terminal emulator
+Icon=~/.config/kitty/kitty.app.png
+MimeType=
+Name[en_US]=kitty
+Name=kitty
+NoDisplay=false
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+TryExec=kitty
+Type=Application
+Version=1.0
+X-KDE-SubstituteUID=false
+X-KDE-Username=
