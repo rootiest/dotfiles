@@ -139,24 +139,24 @@ greater emphasis on keyboard-driven interaction.
    <summary>KDE</summary>
 
 Night Mode: (default)
-![KDE Dark](https://raw.githubusercontent.com/rootiest/dotfiles/main/.screenshots/kde-night.png)
+![KDE Dark](.screenshots/kde-night.png)
 
 Day Mode:
-![KDE Light](https://raw.githubusercontent.com/rootiest/dotfiles/main/.screenshots/kde-day.png)
+![KDE Light](.screenshots/kde-day.png)
 
 </details>
 
 <details>
    <summary>NeoVim</summary>
 
-![NeoVim UI](https://raw.githubusercontent.com/rootiest/dotfiles/main/.screenshots/neovim.png)
+![NeoVim UI](.screenshots/neovim.png)
 
 </details>
 
 <details>
    <summary>Kitty and Fish</summary>
 
-![Kitty and Fish](https://raw.githubusercontent.com/rootiest/dotfiles/main/.screenshots/kitty-fish.png)
+![Kitty and Fish](.screenshots/kitty-fish.png)
 
 </details>
 
