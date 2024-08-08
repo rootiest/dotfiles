@@ -1,0 +1,22 @@
+repos:
+  - repo: local
+    hooks:
+      - id: update-submodules
+        name: Update Submodules
+        entry: bash -c 'git submodule update --remote --merge && git add $(git submodule --quiet foreach "echo \$sm_path")'
+        language: system
+        always_run: true
+        pass_filenames: false
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.0.1
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+
+  - repo: https://github.com/pre-commit/pre-commit
+    rev: v2.16.0
+    hooks:
+      - id: identity # Add your existing pre-commit checks here
+
