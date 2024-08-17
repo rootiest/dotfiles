@@ -8,3 +8,6 @@
 	path = home/dot_config/kitty
   url = https://github.com/rootiest/rootiest-kitty.git
   branch = main
+[submodule "home/dot_config/wezterm"]
+	path = home/dot_config/wezterm
+	url = git@github.com:rootiest/rootiest-wezterm.git
