@@ -15,6 +15,12 @@
 # type = "git-repo"
 # url = "https://github.com/rootiest/rootiest-fish.git"
 # refreshPeriod = "168h"
+#
+# # Rootiest WezTerm Config
+# [".config/wezterm"]
+# type = "git-repo"
+# url = "https://github.com/rootiest/rootiest-wezterm.git"
+# refreshPeriod = "168h"
 
 # Rootiest QMK Firmware
 ["qmk_firmware"]
