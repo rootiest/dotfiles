@@ -115,7 +115,7 @@ A pleasing blend of mouse-driven and keyboard-driven interfaces.
   [Neovim](https://docs.google.com/spreadsheets/d/15k_UgeY0C3j8tVQnR2hD_kNljB1AApG3x3gYrKtUAlw/),
   [fish shell](https://fishshell.com/docs/current/interactive.html#vi-mode), and
   [qmk](https://github.com/andrewjrae/qmk-vim).
-- Fully customized Neovim IDE for drop-in development
+- Fully customizable Neovim PDE for drop-in development
 - Neovim integration with less, scrollback, LazyGit, and more
 - Works with any Linux distribution
 - Automatic package installation on Arch, SUSE, and Debian based distros
