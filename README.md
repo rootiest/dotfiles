@@ -108,7 +108,7 @@ A pleasing blend of mouse-driven and keyboard-driven interfaces.
     - Macchiato/Mocha for night mode
     - Latte for day mode
 - Other included themes: Tokyo Night, Ayu, and many more
-- KDE, NeoVim, kitty, fish, github, and more
+- KDE, NeoVim, wezterm, kitty, fish, tmux, vim, github, and more
 - Integrates seamlessly with my other repositories
 - Neovim, chezmoi, kitty, fish, and more tightly integrated
 - VIM motions are implemented in
@@ -189,11 +189,23 @@ These are included in Rootiest dotfiles, but can be used independently.
 [Rootiest Neovim Configuration](https://github.com/rootiest/rootiest-nvim) -
 A Neovim config built to work alongside this configuration.
 
-[Rootiest Kitty Configuration](https://github.com/rootiest/rootiest-kitty) -
-Kitty terminal configuration that pairs well with this configuration.
+[Rootiest WezTerm](https://github.com/rootiest/rootiest-wezterm) -
+A wezterm configuration that is designed to work with this configuration.
 
-[Rootiest Fish Configuration](https://github.com/rootiest/rootiest-fish) -
-Fish shell configuration that pairs well with this configuration.
+[Rootiest Kitty](https://github.com/rootiest/rootiest-kitty) -
+A kitty configuration that is designed to work with this configuration.
+
+[Rootiest Fish](https://github.com/rootiest/rootiest-fish-conf) -
+A fish configuration that pairs well with this configuration.
+
+[Rootiest Tmux](https://github.com/rootiest/rootiest-tmux) -
+A tmux configuration that is designed to work with this configuration.
+
+[Rootiest Iosevka Font](https://github.com/rootiest/rootiest-iosevka) -
+A custom Iosevka font that is designed by developers, for developers.
+
+[Nerd Fonts](https://github.com/ryanoasis/nerd-fonts/) -
+A collection of fonts that includes many icons and glyphs used in this configuration.
 
 ## Credits
 
