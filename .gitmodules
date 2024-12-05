@@ -1,16 +1,16 @@
 [submodule "home/dot_config/fish"]
 	path = home/dot_config/fish
-  url = https://github.com/rootiest/rootiest-fish.git
+	url = https://github.com/rootiest/rootiest-fish.git
 [submodule "home/dot_config/nvim"]
 	path = home/dot_config/nvim
-  url = https://github.com/rootiest/rootiest-nvim.git
+	url = https://github.com/rootiest/rootiest-nvim.git
 [submodule "home/dot_config/kitty"]
 	path = home/dot_config/kitty
-  url = https://github.com/rootiest/rootiest-kitty.git
-  branch = main
+	url = https://github.com/rootiest/rootiest-kitty.git
+	branch = main
 [submodule "home/dot_config/wezterm"]
 	path = home/dot_config/wezterm
-	url = git@github.com:rootiest/rootiest-wezterm.git
+	url = https://github.com/rootiest/rootiest-wezterm.git
 [submodule "home/dot_config/tmux"]
 	path = home/dot_config/tmux
 	url = https://github.com/rootiest/rootiest-tmux.git
