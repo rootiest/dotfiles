@@ -12,7 +12,7 @@
 	path = home/dot_config/wezterm
 	url = https://github.com/rootiest/rootiest-wezterm.git
 [submodule "home/dot_config/tmux"]
-	path = home/dot_config/tmux
+	path = home/dot_config/external_tmux
 	url = https://github.com/rootiest/rootiest-tmux.git
 [submodule "home/dot_config/vim"]
 	path = home/dot_config/vim
